@@ -16,7 +16,7 @@ Project Description (1-2 pages):
 
 **Description**
 
-The Chord Learning App is an android app that will allow users to learn and practice guitar chords without a guitar. This will be especially useful for those who travel a lot, use public transport, or for beginners who can&#39;t practice on a real guitar for long without their fingers hurting.
+The Chord Learning App is an android app that will allow users to learn and practice guitar chords without a guitar. This will be especially useful for those who are always on the go or for beginners who can&#39;t practice on a real guitar for long without their fingers hurting.
 
 The app will essentially turn the phone&#39;s screen into a fretboard, divided into 4 frets with the 6 strings displayed above. The user will hold the phone like the neck of a guitar and as they push down on the displayed strings the note associated with the string in that position will be played. Certain combinations of notes will play chords and will produce different sounds.
 
