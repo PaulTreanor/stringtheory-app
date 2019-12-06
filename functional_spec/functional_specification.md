@@ -138,13 +138,19 @@ Requires an Android device of at least the width of an actual fretboard which is
 
 ### 3.1 Home Page Wireframe
 
+![Home Page Wireframe](Func. Spec. Diagrams/home_wireframe_menu.png)
+
 From the home page, users will be able to select freestyle mode or chord learning mode, or they can change the application&#39;s settings.
 
 ### 3.2 Freestyle Mode Wireframe
 
+![Freestyle mode Wireframe](Func. Spec. Diagrams/freestyle_wireframe.png)
+
 In Freestyle mode, the user will get no feedback. The user simply presses down on the &quot;strings&quot; and &quot;strums&quot; the strumming area at the base of the phone in order to make music.
 
 ### 3.3 Chord learning mode Wireframe
+
+![Chord Learning mode Wireframe](Func. Spec. Diagrams/practice_mode_wireframe.png)
 
 In chord learning mode the user chooses the chord they wish to play from a dropdown menu. They are given pointers on how to play the chord in the form of coloured and labelled circles. The labels correspond to each of the user&#39;s fingers. In this mode the user is given feedback if they don&#39;t play the chord correctly.
 
@@ -216,7 +222,7 @@ Some people may be sensitive to the vibration and may find it irritating. If thi
 
 ## 5. System Architecture
 
-
+![System Architecture Diagram](Func. Spec. Diagrams/Sys._Arch._Diagram-page-001.jpg)
 
 ### 5.1 Application User Interface
 
@@ -240,7 +246,7 @@ The sound files for notes that are used will be stored on the device&#39;s inter
 
 ### 6.1 Context Diagram
 
-
+![Context Diagram](Func. Spec. Diagrams/Context_Diagram.png)
 
 The context diagram shows how the application will communicate with external entities. In our case, the user communicates with the app through a touchscreen. The program also communicates with the device&#39;s speakers by creating audio to play. The sound files that the program needs are stored in the phones internal storage. These are requested by the program when needed. Finally, the program communicates with the user via the speakers by playing audio. Similarly, the program communicates with the user through the device&#39;s vibration motor, by giving the user feedback.
 
@@ -248,11 +254,15 @@ The context diagram shows how the application will communicate with external ent
 
 #### Data flow diagram 1 - Freestyle Mode
 
+![Freestyle Mode Data Flow Diagram](Func. Spec. Diagrams/DFD-_Freestyle.png)
+
 The data flow diagram for the app&#39;s freestyle mode shows how the user&#39;s touch input is turned into audio played by the speaker.
 
 First, the user selects which notes to play and which strings to strum using the touchscreen. This information is turned to coordinates and which the app can interpret. The selected notes and strings are then passed on to a process that creates the chord. This process requests sound files for each note used in the chord. The sound files are then sent from the phone&#39;s storage. The process creates the chord and sends the audio to the device&#39;s speaker to be played.
 
 #### Data flow diagram 2 - Chord Learning Mode
+
+![Chord Practice Data Flow Diagram](Func. Spec. Diagrams/DFD-_Chord_Practise.png)
 
 This diagram shows how data is passed between processes and entities in the chord practicing mode. It is similar to the data flow diagram for the freestyle mode, but it includes processes for selecting the chord to practice, comparing the chord played to the chord being practiced, and giving feedback based on that comparison.
 
@@ -260,15 +270,21 @@ This diagram shows how data is passed between processes and entities in the chor
 
 #### Data flow diagram 3 - Change Settings
 
+![Settings Data Flow Diagram](Func. Spec. Diagrams/DFD-Change_Settings.png)
+
 This data flow diagram shows how the user would select the settings menu and navigate through the app to change a particular setting. When the user edits a setting, the change is sent to a configuration file to be saved.
 
 ### 6.3 Object Models and Class Diagrams
 
 #### Class Responsibility Collaboration Diagram
 
+![CRC Diagram](Func. Spec. Diagrams/CRC_Diagram.png)
+
 The CRC diagram shows the classes we think we will use and how they relate to each other. These are the classes that will make up the main program and they will communicate with the user via the phone&#39;s touchscreen and speakers. The program will also communicate with the phone&#39;s internal storage.
 
 #### UML Class Diagram
+
+![CRC Diagram](Func. Spec. Diagrams/UML_Class_Diagram.png)
 
 This UML Class Diagram shows the objects we will use for the main operational scenario of the app, the freestyle mode.
 
