@@ -278,6 +278,9 @@ While we are still in the early days of completing the technical specification a
 
 ## 7. Preliminary Schedule
 
+
+![Gantt Diagram](Func. Spec. Diagrams/gant_diagram.png)
+
 Above is our GANTT chart. We broke the chart down into different stages that we deemed significant. We then split these into subgroups. The chart is colour coded so from a glance we can see if we are ahead of schedule or not; green is completed, orange is on-going and within the time period, yellow is on-going and ahead of schedule, red is past due date and, dark red is when we should have started. This is all done through a series of functions and logic operations on GoogleSheets.
 
 Many of the tasks will be done concurrently in order to maximise productivity in the short amount of time we have. Testing will be happening throughout the creation of the app.
