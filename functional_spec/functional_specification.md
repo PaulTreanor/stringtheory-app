@@ -270,7 +270,7 @@ This diagram shows how data is passed between processes and entities in the chor
 
 #### Data flow diagram 3 - Change Settings
 
-![Settings Data Flow Diagram](Func. Spec. Diagrams/DFD-Change_Settings.png)
+![Settings Data Flow Diagram](Func. Spec. Diagrams/DFD-_Change_Settings.png)
 
 This data flow diagram shows how the user would select the settings menu and navigate through the app to change a particular setting. When the user edits a setting, the change is sent to a configuration file to be saved.
 
