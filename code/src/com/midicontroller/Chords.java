@@ -10,9 +10,9 @@ import jm.util.Write;
 
 
 public final class Chords implements JMC{
-    private static Score s = new Score("CPrase (chord) class");
-    private static Part p = new Part("distorted guitar", ProgramChanges.DIST_GUITAR, 0);
-    private int[] pitchArray = {};
+    Score s = new Score("CPrase (chord) class");
+    Part p = new Part("distorted guitar", ProgramChanges.DIST_GUITAR, 0);
+    int[] pitchArray = {};
 
     public Chords(int[] pitchArray){
         this.pitchArray = pitchArray;
@@ -27,7 +27,7 @@ public final class Chords implements JMC{
         //empty part
     }
 
-    private static void createChord(int[] pitchArray) {
+    private void createChord(int[] pitchArray) {
         //add chord to the part
         CPhrase chord = new CPhrase();
         chord.addChord(pitchArray, 1.0); //second parameter is duration, not in seconds tho
