@@ -30,7 +30,7 @@ public final class Chords implements JMC{
     private void createChord(int[] pitchArray) {
         //add chord to the part
         CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, 1.0); //second parameter is duration, not in seconds tho
+        chord.addChord(pitchArray, 0.5); //second parameter is duration, not in seconds tho
         p.addCPhrase(chord);
     }
 }
