@@ -28,7 +28,7 @@ public class Main {
         }
     }
     public static int[] dChord(){
-        int[] pitchArray = {JMC.A5, JMC.D5, JMC.FS5};
+        int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
         return pitchArray;
     }
     public static int[] gChord(){
