@@ -16,7 +16,8 @@ public class Gongs implements JMC {
     }
     public Gongs() {
         Score score = new Score();
-        int[] pitches = {CS4, BF4, D5, E5, A5};
+        int[] pitches = {CS4, B4, D5, E6, A5};
+
         for (int i=0; i< 4; i++){
             Part p = new Part(i);
             Phrase phr = new Phrase (new Note(pitches[i], 1.0));
@@ -24,6 +25,15 @@ public class Gongs implements JMC {
             score.addPart(p);
         }
 
+        //instrument declaration
+        int sampleRate = 22000;
+        Instrument[] sines = new Instrument[4];
+        for (int i=0; i<4; i++){
+            Instrument sine = new AddSynthInst(sampleRate);
+            sines[i] = sine;
+
+        }
+        Play.audio(score, sines);
     }
 
 
