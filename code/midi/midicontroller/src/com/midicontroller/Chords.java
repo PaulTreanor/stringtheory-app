@@ -24,13 +24,12 @@ public final class Chords implements JMC{
         s.addPart(p);
         //Write.midi(s, "Chords.mid");
         Play.midi(s);
-        //empty part
     }
 
     private void createChord(int[] pitchArray) {
         //add chord to the part
         CPhrase chord = new CPhrase();
-        chord.addChord(pitchArray, 0.5); //second parameter is duration, not in seconds tho
+        chord.addChord(pitchArray, 0.5); //second parameter is duration, not in seconds
         p.addCPhrase(chord);
     }
 }

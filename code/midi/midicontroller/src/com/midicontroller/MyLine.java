@@ -20,7 +20,6 @@ public final class MyLine extends RTLine implements JMC {
     }
 
     public Note getNextNote() {
-
         int chooseNote = chooseNote();
         Note n = new Note(chooseNote, 0.5);
         return n;

@@ -12,13 +12,15 @@ import jm.util.*;
 
 public class Gongs implements JMC {
     public static void main(String[] args) {
-        new Gongs();
+        //create pitchArray
+        int[] pitches = {CS4, B4, D5, E6, A5, B5};
+        new Gongs(pitches);
     }
-    public Gongs() {
+    public Gongs(int[] pitches) {
         Score score = new Score();
-        int[] pitches = {CS4, B4, D5, E6, A5};
 
-        for (int i=0; i< 4; i++){
+        //stop while i less than length pitches
+        for (int i=0; i< pitches.length -1; i++){
             Part p = new Part(i);
             Phrase phr = new Phrase (new Note(pitches[i], 1.0));
             p.addPhrase(phr); //add cphrase?
@@ -28,7 +30,7 @@ public class Gongs implements JMC {
         //instrument declaration
         int sampleRate = 22000;
         Instrument[] sines = new Instrument[4];
-        for (int i=0; i<4; i++){
+        for (int i=0; i<pitches.length - 1; i++){
             Instrument sine = new AddSynthInst(sampleRate);
             sines[i] = sine;
 
