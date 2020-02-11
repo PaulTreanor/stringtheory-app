@@ -8,6 +8,7 @@ public class Main {
         String chordName = input.next();
         while (!chordName.equals("done")) {
             //select chord
+            //select chord
             int[] pitchArray = chordChooser(chordName);
 
             //play chord

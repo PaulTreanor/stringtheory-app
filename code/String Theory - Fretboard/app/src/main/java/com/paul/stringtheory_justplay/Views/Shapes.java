@@ -52,15 +52,15 @@ public class Shapes extends View {
 
         //create rectangle
         Rect rect = new Rect();
-        rect.top = 140;
+        rect.top = 55;
         rect.left = 1820;
-        rect.bottom = rect.top + 800;
+        rect.bottom = rect.top + 970;
         rect.right = rect.left + 100;
 
         //define circle parameters
-        float cx = -150;
+        float cx = -330;
         float cy = 540;
-        float radius = 400f;
+        float radius = 565f;
 
         //define paint object to colour shapes
         @SuppressLint("DrawAllocation") Paint paint = new Paint();
