@@ -58,7 +58,7 @@ public class Shapes extends View {
         rect.right = rect.left + 100;
 
         //define circle parameters
-        float cx = 0;
+        float cx = -150;
         float cy = 540;
         float radius = 400f;
 
