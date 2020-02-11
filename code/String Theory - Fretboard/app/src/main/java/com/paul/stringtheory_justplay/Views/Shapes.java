@@ -64,7 +64,7 @@ public class Shapes extends View {
 
         //define paint object to colour shapes
         @SuppressLint("DrawAllocation") Paint paint = new Paint();
-        paint.setColor(Color.GREEN);
+        paint.setColor(Color.rgb(66,66,66));
 
         //draw circle and rectangle
         canvas.drawCircle(cx, cy, radius, paint);
