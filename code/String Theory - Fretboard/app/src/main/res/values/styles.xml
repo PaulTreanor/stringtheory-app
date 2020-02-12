@@ -10,6 +10,7 @@
     </style>
 
     <style name="buttons" parent="android:style/Widget.Button">
+
     </style>
 
 </resources>
