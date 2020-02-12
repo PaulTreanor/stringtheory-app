@@ -5,6 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+
+import com.paul.stringtheory_justplay.Sound.Chords;
+import com.paul.stringtheory_justplay.Sound.PlayNote;
+
+import jm.JMC;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
+    }
+
+    public static void playf(View view){
+        int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
+        Chords newChord = new Chords(pitchArray);
+        newChord.play();
     }
     }
 

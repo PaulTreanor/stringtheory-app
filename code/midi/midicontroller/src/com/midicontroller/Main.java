@@ -1,24 +1,27 @@
 package com.midicontroller;
 import java.util.Scanner;
-import jm.JMC;
+    import jm.JMC;
 
-public class Main {
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        String chordName = input.next();
-        while (!chordName.equals("done")) {
-            //select chord
-            //select chord
-            int[] pitchArray = chordChooser(chordName);
+    public class Main {
+        public static void main(String[] args){
+            /*Scanner input = new Scanner(System.in);
+            String chordName = input.next();
+            while (!chordName.equals("done")) {
+                //select chord
+                //select chord
+                int[] pitchArray = chordChooser(chordName);
 
-            //play chord
+                //play chord
+                Chords newChord = new Chords(pitchArray);
+                newChord.play();
+
+                //get next input
+                chordName = input.next();
+            }*/
+            int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
             Chords newChord = new Chords(pitchArray);
             newChord.play();
-
-            //get next input
-            chordName = input.next();
         }
-    }
 
     public static int[] chordChooser(String chordName){
         if (chordName.equals("d")){

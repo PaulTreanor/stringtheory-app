@@ -10,8 +10,9 @@ public class PlayNote {
     public static void main(String[] args){
         Note note = new Note();
         note.setPitch(JMC.A4);
-
         Play.midi(note);
 
     }
+
+
 }
