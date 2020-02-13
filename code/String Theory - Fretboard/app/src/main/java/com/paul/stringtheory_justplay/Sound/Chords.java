@@ -26,6 +26,11 @@ public final class Chords implements JMC{
         Play.midi(s);
     }
 
+    public void count(){
+        System.out.println("hello");
+    }
+
+
     private void createChord(int[] pitchArray) {
         //add chord to the part
         CPhrase chord = new CPhrase();
