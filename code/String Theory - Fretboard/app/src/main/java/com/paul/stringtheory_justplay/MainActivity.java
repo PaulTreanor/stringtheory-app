@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import java.io.IOException;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,11 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void playf(View v){
-        //int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
-        //Chords newChord = new Chords(pitchArray);
+    //int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
+    //Chords newChord = new Chords(pitchArray);
+
+
+
+    public void playf(View v) throws IOException {
+
         if (player ==null){
-            player = MediaPlayer.create(this, R.raw.chords);
+            player.setDataSource("/Internal shared storage/Download/Chord.mid");
+            //player = MediaPlayer.create(this, R.raw.chords);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {

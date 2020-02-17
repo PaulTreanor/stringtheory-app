@@ -22,7 +22,7 @@ public final class Chords implements JMC{
         System.out.println("Creating chord...");
         createChord(pitchArray);
         s.addPart(p);
-        //Write.midi(s, "Chords.mid");
+        Write.midi(s, "chordstorage/Chordiboi.mid");
         Play.midi(s);
     }
 
