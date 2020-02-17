@@ -7,13 +7,18 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
+    private String demoFileName = "hello.txt";
+    private Toast textViewPathHint;
 
 
     @Override
@@ -38,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     public void playf(View v) throws IOException {
 
         if (player ==null){
-            player.setDataSource("/Internal shared storage/Download/Chord.mid");
-            //player = MediaPlayer.create(this, R.raw.chords);
+            //player.setDataSource(R.raw.chords);
+            player = MediaPlayer.create(this, R.raw.chords);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
@@ -73,5 +78,8 @@ public class MainActivity extends AppCompatActivity {
         stopPlayer();
 
     }
+
+
+
 }
 
