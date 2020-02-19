@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (player ==null){
             //player.setDataSource(R.raw.chords);
-            player = MediaPlayer.create(this, R.raw.chords);
+            player = MediaPlayer.create(this, R.raw.a_chord);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
