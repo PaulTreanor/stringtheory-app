@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
             //use shape to find chord file to use
             //chord = findChord(shape) - findChord function of Shape class
-            player = MediaPlayer.create(this, R.raw.a_chord);
+            player = MediaPlayer.create(this, R.raw.dm);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
