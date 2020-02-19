@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <com.paul.stringtheory_justplay.Views.Soundhole
+        android:layout_width="100dp"
+        android:layout_height="400dp" />
+
     <com.paul.stringtheory_justplay.Views.FretboardBackground
         android:layout_width="match_parent"
         android:layout_height="970px"
