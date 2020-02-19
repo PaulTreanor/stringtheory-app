@@ -35,7 +35,6 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
-        android:onClick="playf"
         android:text="F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/shapes2" />
@@ -59,7 +58,6 @@
 
         android:background="@drawable/button_design"
         android:text="Bb"
-        android:onClick="pause"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,7 +68,6 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="Eb"
-        android:onClick="stop"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -294,5 +291,14 @@
         tools:layout_editor_absoluteX="1dp"
         android:background = "@color/colorPrimary"
         />
+
+    <Button
+        android:id="@+id/soundhole_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:onClick="playChord"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="176dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,15 +35,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
-    //Chords newChord = new Chords(pitchArray);
 
+    public void playChord(View v) {
+        //get shape
+        //Shape shape = new Shape();
 
-
-    public void playf(View v) throws IOException {
-
-        if (player ==null){
-            //player.setDataSource(R.raw.chords);
+        //check is chord_shape is valid
+        if ((1+2)==3){    //simple function is filling in for shape checking function
+            if (player !=null) {
+                stopPlayer();
+            }
+            //use shape to find chord file to use
+            //chord = findChord(shape) - findChord function of Shape class
             player = MediaPlayer.create(this, R.raw.a_chord);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
@@ -51,19 +54,9 @@ public class MainActivity extends AppCompatActivity {
                     stopPlayer();
                 }
             });
+
+            player.start();
         }
-        player.start();
-
-    }
-    public void pause(View v){
-        if (player  !=null){
-            player.pause();
-        }
-
-    }
-    public void stop(View v){
-
-        stopPlayer();
     }
 
     private void stopPlayer(){
@@ -72,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
             player = null;
         }
     }
+
+    //stops MediaPlayer upon leaving app
     @Override
     protected void onStop(){
         super.onStop();
