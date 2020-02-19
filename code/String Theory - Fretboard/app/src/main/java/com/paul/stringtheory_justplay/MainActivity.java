@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         //Shape shape = new Shape();
 
         //check is chord_shape is valid
-        if ((1+2)==3){    //simple function is filling in for shape checking function
+        if ((1+2)==3){    //simple if statement is filling in for shape checking function
             if (player !=null) {
                 stopPlayer();
             }
