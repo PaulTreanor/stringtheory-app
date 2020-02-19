@@ -31,7 +31,7 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
         android:onClick="playf"
-        android:text="play"
+        android:text="F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/shapes2" />
 
@@ -53,7 +53,7 @@
         android:layout_marginEnd="40dp"
 
         android:background="@drawable/button_design"
-        android:text="pauseBb"
+        android:text="Bb"
         android:onClick="pause"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -64,7 +64,7 @@
         android:layout_height="53dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
-        android:text="stopEb"
+        android:text="Eb"
         android:onClick="stop"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent" />
