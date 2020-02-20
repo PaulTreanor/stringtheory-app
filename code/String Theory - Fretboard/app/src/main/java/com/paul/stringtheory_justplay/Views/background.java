@@ -13,22 +13,22 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-public class Shapes extends View {
+public class background extends View {
 
-    public Shapes(Context context) {
+    public background(Context context) {
         super(context);
 
         init(null);
     }
 
-    public Shapes(Context context, @Nullable AttributeSet attrs) {
+    public background(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
         init(attrs);
 
     }
 
-    public Shapes(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public background(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         init(attrs);
@@ -36,7 +36,7 @@ public class Shapes extends View {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public Shapes(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public background(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
 
         init(attrs);

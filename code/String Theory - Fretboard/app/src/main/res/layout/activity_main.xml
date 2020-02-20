@@ -21,7 +21,7 @@
         android:background="@color/colorPrimary"/>
 
 
-    <com.paul.stringtheory_justplay.Views.Shapes
+    <com.paul.stringtheory_justplay.Views.background
         android:id="@+id/shapes2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

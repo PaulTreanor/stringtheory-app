@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.JetPlayer;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -31,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
     }
 
 
@@ -47,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
             }
             //use shape to find chord file to use
             //chord = findChord(shape) - findChord function of Shape class
-            player = MediaPlayer.create(this, R.raw.dm);
+
+            player = MediaPlayer.create(this, R.raw.dm); //what type is dm and how do I set a variable to be equal to it
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
