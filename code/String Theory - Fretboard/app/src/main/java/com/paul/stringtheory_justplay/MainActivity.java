@@ -2,24 +2,19 @@ package com.paul.stringtheory_justplay;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.JetPlayer;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.Toast;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
-    private String demoFileName = "hello.txt";
-    private Toast textViewPathHint;
+    private Button[] allButtons = new Button[25];
 
 
     @Override
@@ -38,15 +33,17 @@ public class MainActivity extends AppCompatActivity {
     public void playChord(View v) {
         //get shape
         //Shape shape = new Shape();
-
+        Shapes chordShape = new Shapes();
+        chordShape.setShape();
+        setAllButtons();
         //check is chord_shape is valid
-        if ((1+2)==3){    //simple if statement is filling in for shape checking function
+        if (chordShape.isShapeValid()){    //simple if statement is filling in for shape checking function
             if (player !=null) {
                 stopPlayer();
             }
-            //use shape to find chord file to use
-            //chord = findChord(shape) - findChord function of Shape class
 
+            //use shape to find chord file to use
+            //chord = chordShape.getChord(); - findChord function of Shape class;
             player = MediaPlayer.create(this, R.raw.dm); //what type is dm and how do I set a variable to be equal to it
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
@@ -73,6 +70,21 @@ public class MainActivity extends AppCompatActivity {
         stopPlayer();
 
     }
+
+    public void setAllButtons(){
+        for (int i = 1; i < 25; i++) {
+            int id = getResources().getIdentifier("btn"+ i, "id", getPackageName());
+            allButtons[i] = (Button) findViewById(id);
+            Log.d("BUTTON", String.valueOf(i));
+        }
+    }
+
+    public Button[] pressedButtons(){
+        Button[]
+
+        return
+    }
+
 
 
 

@@ -43,6 +43,8 @@ public class background extends View {
 
     }
 
+
+
     private void init(@Nullable AttributeSet set) {
 
     }
