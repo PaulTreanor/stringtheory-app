@@ -10,6 +10,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+
+import java.net.URI;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static MainActivity instance;
     private Shapes chordShape;
+    //testing passing chords
+    private int chord = R.raw.dm;
 
 
     @Override
@@ -55,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
             //use shape to find chord file to use
             //chord = chordShape.getChord(); - findChord function of Shape class;
-            player = MediaPlayer.create(this, R.raw.dm); //what type is dm and how do I set a variable to be equal to it
+            player = MediaPlayer.create(this, chord); //what type is dm and how do I set a variable to be equal to it
+
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
