@@ -40,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playChord(View v) {
-
+        Log.d("BUTTON", "hello");
         Shapes chordShape = new Shapes(this);
         chordShape.setAllButtons();
         //get list of all buttons that are pressed down
-        //chordShape.setShape();
+        chordShape.pressedButtons();
+        chordShape.testButtons();
         //check is chord_shape is valid
         if (chordShape.isShapeValid()){    //simple if statement is filling in for shape checking function
             if (player !=null) {
