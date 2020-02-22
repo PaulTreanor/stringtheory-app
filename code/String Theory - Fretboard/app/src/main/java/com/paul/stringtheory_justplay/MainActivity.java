@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     //rprivate Button[] allButtons = new Button[25];
 
     private static MainActivity instance;
+    private Shapes chordShape;
 
 
     @Override
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //list all buttons on fretboards
         //setAllButtons();
+        chordShape = new Shapes(this);
+        chordShape.setAllButtons();
+        chordShape.pressedButtons();
     }
 
     //allows methods from MainAcitvity to be called from other classes
@@ -41,13 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void playChord(View v) {
         Log.d("BUTTON", "hello");
-        Shapes chordShape = new Shapes(this);
-        chordShape.setAllButtons();
-        //get list of all buttons that are pressed down
-        chordShape.pressedButtons();
         chordShape.testButtons();
+
         //check is chord_shape is valid
-        if (chordShape.isShapeValid()){    //simple if statement is filling in for shape checking function
+        if (chordShape.isShapeValid()){
             if (player !=null) {
                 stopPlayer();
             }
@@ -80,55 +81,6 @@ public class MainActivity extends AppCompatActivity {
         stopPlayer();
 
     }
-
-    /*lists of fretboard buttons
-    public void setAllButtons(){
-        for (int i = 1; i < 25; i++) {
-            int id = getResources().getIdentifier("btn"+ i, "id", getPackageName());
-            allButtons[i] = (Button) findViewById(id);
-        }
-    }
-
-    //a simple test case pressedButtons functions
-    public ArrayList<Button> pressedButtons(){
-        ArrayList<Button> pressedButtons = new ArrayList<>(0);
-
-        for (Button button: allButtons){
-            pressedButtons.add(button);
-        }
-        return pressedButtons;
-    }
-
-
-
-    @SuppressLint("ClickableViewAccessibility")
-    public ArrayList<Button> pressedButtons(){
-        final ArrayList<Button> pressedButtons = new ArrayList<>(0);
-
-        //for button that are touched in allButtons
-        for (Button button: allButtons){
-            final boolean[] isScreenTouched = {false};
-            button.setOnTouchListener(new Button.OnTouchListener() {
-
-                @Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    if (event.getAction() == MotionEvent.ACTION_DOWN ) {
-                        isScreenTouched[0] = true;
-                    }
-                    return isScreenTouched[0];
-                }
-
-            });
-            if (isScreenTouched[0] = true) {
-                pressedButtons.add(button);
-            }
-        }
-
-        return pressedButtons;
-    }*/
-
-
-
 
 }
 

@@ -22,13 +22,6 @@ public class Shapes {
         this.activity = _activity;
     }
 
-    public void setShape(){
-
-        //sets listOfNotes
-        pressedNotes = pressedButtons();
-
-    }
-
     public void testButtons(){
         Log.d("BUTTON", String.valueOf(pressedNotes.size()));
     }
@@ -50,49 +43,43 @@ public class Shapes {
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    public ArrayList<Button> pressedButtons(){
-        final ArrayList<Button> pressedButtons = new ArrayList<>(0);
+    public void pressedButtons(){
 
         //for button that are touched in allButtons
         Button[] validButtons = Arrays.copyOfRange(allButtons, 1, 25);
         //final Button button = validButtons[0];
-        //final boolean[] isScreenTouched = {false};
+
         for (final Button button: validButtons) {
             button.setOnTouchListener(new Button.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
-                    float x = event.getX();
-                    float y = event.getY();
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
                             button.setText("click");
+                            if (!pressedNotes.contains(button)){
+                                pressedNotes.add(button);
+                            }
                             break;
+
                         case MotionEvent.ACTION_MOVE:
                             button.setText("touch");
+                            if (!pressedNotes.contains(button)){
+                                pressedNotes.add(button);
+                            }
                             break;
                         case MotionEvent.ACTION_UP:
                             button.setText("F");
+                            if (pressedNotes.contains(button)){
+                                pressedNotes.remove(button);
+                            }
                             break;
+                        default:
+                            throw new IllegalStateException("Unexpected value: " + event.getAction());
                     }
-
                     return true;
                 }
-
-
-                /*@Override
-                public boolean onTouch(View v, MotionEvent event) {
-                    if (event.getAction() == MotionEvent.ACTION_MOVE ) {
-                        isScreenTouched[0] = true;
-                    }
-                    return isScreenTouched[0];
-                }*/
-
             });
-
-
         }
-        return pressedButtons;
     }
-
 
 }
