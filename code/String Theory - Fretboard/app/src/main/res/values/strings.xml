@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">String Theory - Just Play</string>
+    <string name="freestyle">Freestyle Mode</string>
+    <string name="settings">Setting</string>
 </resources>

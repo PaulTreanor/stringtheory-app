@@ -2,18 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <com.paul.stringtheory_justplay.Views.FretboardBackground
+        android:id="@+id/fretboardBackground2"
         android:layout_width="match_parent"
-        android:layout_height="970px"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
-        tools:layout_editor_absoluteX="-1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:elevation="0dp"
-        android:background="@color/colorPrimary"/>
+        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shapes2" />
 
 
     <com.paul.stringtheory_justplay.Views.Shapes
@@ -27,34 +29,33 @@
         android:id="@+id/button"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
         android:onClick="playf"
         android:text="F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintBottom_toBottomOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
 
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
         android:text="F"
         app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
 
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
-        android:text="Bb"
         android:onClick="pause"
+        android:text="pauseBb"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -62,10 +63,10 @@
         android:id="@+id/button4"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
-        android:text="Eb"
         android:onClick="stop"
+        android:text="stopEb"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -73,7 +74,7 @@
         android:id="@+id/button5"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
         android:text="G#"
         app:layout_constraintBottom_toTopOf="@+id/button6"
@@ -83,23 +84,22 @@
         android:id="@+id/button6"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
 
+        android:layout_marginEnd="24dp"
         android:background="@drawable/button_design"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
 
         android:text="F#"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="338dp" />
 
     <Button
         android:id="@+id/button8"
@@ -108,8 +108,8 @@
 
         android:background="@drawable/button_design"
         android:text="C#"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
-        app:layout_constraintEnd_toStartOf="@+id/button6" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="285dp" />
 
     <Button
         android:id="@+id/button9"
@@ -118,8 +118,8 @@
 
         android:background="@drawable/button_design"
         android:text="A"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toStartOf="@+id/button5" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="232dp" />
 
     <Button
         android:id="@+id/button10"
@@ -128,8 +128,8 @@
 
         android:background="@drawable/button_design"
         android:text="E"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
-        app:layout_constraintEnd_toStartOf="@+id/button4" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="179dp" />
 
     <Button
         android:id="@+id/button11"
@@ -138,8 +138,8 @@
 
         android:background="@drawable/button_design"
         android:text="B"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
-        app:layout_constraintEnd_toStartOf="@+id/button3" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="126dp" />
 
     <Button
         android:id="@+id/button12"
@@ -148,19 +148,18 @@
 
         android:background="@drawable/button_design"
         android:text="F#"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintEnd_toStartOf="@+id/button2" />
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="74dp" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
 
         android:text="G"
-        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
-        app:layout_constraintEnd_toStartOf="@+id/button7" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="338dp" />
 
     <Button
         android:id="@+id/button14"
@@ -169,8 +168,8 @@
 
         android:background="@drawable/button_design"
         android:text="D"
-        app:layout_constraintBottom_toTopOf="@+id/button13"
-        app:layout_constraintEnd_toStartOf="@+id/button8" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="285dp" />
 
     <Button
         android:id="@+id/button15"
@@ -179,8 +178,8 @@
 
         android:background="@drawable/button_design"
         android:text="Bb"
-        app:layout_constraintBottom_toTopOf="@+id/button14"
-        app:layout_constraintEnd_toStartOf="@+id/button9" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="232dp" />
 
     <Button
         android:id="@+id/button16"
@@ -189,8 +188,8 @@
 
         android:background="@drawable/button_design"
         android:text="F"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
-        app:layout_constraintEnd_toStartOf="@+id/button10" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="179dp" />
 
     <Button
         android:id="@+id/button17"
@@ -199,8 +198,8 @@
 
         android:background="@drawable/button_design"
         android:text="C"
-        app:layout_constraintBottom_toTopOf="@+id/button16"
-        app:layout_constraintEnd_toStartOf="@+id/button11" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="126dp" />
 
     <Button
         android:id="@+id/button18"
@@ -209,19 +208,18 @@
 
         android:background="@drawable/button_design"
         android:text="G"
-        app:layout_constraintBottom_toTopOf="@+id/button17"
-        app:layout_constraintEnd_toStartOf="@+id/button12" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="74dp" />
 
     <Button
         android:id="@+id/button19"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
 
         android:text="G#"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button13" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="338dp" />
 
     <Button
         android:id="@+id/button20"
@@ -230,8 +228,8 @@
 
         android:background="@drawable/button_design"
         android:text="Eb"
-        app:layout_constraintBottom_toTopOf="@+id/button19"
-        app:layout_constraintEnd_toStartOf="@+id/button14" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="285dp" />
 
     <Button
         android:id="@+id/button21"
@@ -240,8 +238,8 @@
 
         android:background="@drawable/button_design"
         android:text="B"
-        app:layout_constraintBottom_toTopOf="@+id/button20"
-        app:layout_constraintEnd_toStartOf="@+id/button15" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="232dp" />
 
     <Button
         android:id="@+id/button22"
@@ -250,8 +248,8 @@
 
         android:background="@drawable/button_design"
         android:text="F#"
-        app:layout_constraintBottom_toTopOf="@+id/button21"
-        app:layout_constraintEnd_toStartOf="@+id/button16" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="179dp" />
 
     <Button
         android:id="@+id/button23"
@@ -260,8 +258,8 @@
 
         android:background="@drawable/button_design"
         android:text="C#"
-        app:layout_constraintBottom_toTopOf="@+id/button22"
-        app:layout_constraintEnd_toStartOf="@+id/button17" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="126dp" />
 
     <Button
         android:id="@+id/button24"
@@ -270,24 +268,27 @@
 
         android:background="@drawable/button_design"
         android:text="G#"
-        app:layout_constraintBottom_toTopOf="@+id/button23"
-        app:layout_constraintEnd_toStartOf="@+id/button18" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="74dp" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="729dp"
         android:layout_height="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/button18"
-        tools:layout_editor_absoluteX="1dp"
-        android:background = "@color/colorPrimary"/>
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground2" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="729dp"
         android:layout_height="3dp"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
-        tools:layout_editor_absoluteX="1dp"
-        android:background = "@color/colorPrimary"
-        />
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
