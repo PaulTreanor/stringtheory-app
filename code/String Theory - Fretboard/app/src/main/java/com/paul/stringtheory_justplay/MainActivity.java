@@ -2,19 +2,22 @@ package com.paul.stringtheory_justplay;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
-
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
-    private Button[] allButtons = new Button[25];
+    //rprivate Button[] allButtons = new Button[25];
+
+    private static MainActivity instance;
 
 
     @Override
@@ -27,15 +30,21 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //list all buttons on fretboards
+        //setAllButtons();
     }
 
+    //allows methods from MainAcitvity to be called from other classes
+    public static MainActivity getInstance() {
+        return instance;
+    }
 
     public void playChord(View v) {
-        //get shape
-        //Shape shape = new Shape();
-        Shapes chordShape = new Shapes();
-        chordShape.setShape();
-        setAllButtons();
+
+        Shapes chordShape = new Shapes(this);
+        chordShape.setAllButtons();
+        //get list of all buttons that are pressed down
+        //chordShape.setShape();
         //check is chord_shape is valid
         if (chordShape.isShapeValid()){    //simple if statement is filling in for shape checking function
             if (player !=null) {
@@ -71,19 +80,51 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*lists of fretboard buttons
     public void setAllButtons(){
         for (int i = 1; i < 25; i++) {
             int id = getResources().getIdentifier("btn"+ i, "id", getPackageName());
             allButtons[i] = (Button) findViewById(id);
-            Log.d("BUTTON", String.valueOf(i));
         }
     }
 
-    public Button[] pressedButtons(){
-        Button[]
+    //a simple test case pressedButtons functions
+    public ArrayList<Button> pressedButtons(){
+        ArrayList<Button> pressedButtons = new ArrayList<>(0);
 
-        return
+        for (Button button: allButtons){
+            pressedButtons.add(button);
+        }
+        return pressedButtons;
     }
+
+
+
+    @SuppressLint("ClickableViewAccessibility")
+    public ArrayList<Button> pressedButtons(){
+        final ArrayList<Button> pressedButtons = new ArrayList<>(0);
+
+        //for button that are touched in allButtons
+        for (Button button: allButtons){
+            final boolean[] isScreenTouched = {false};
+            button.setOnTouchListener(new Button.OnTouchListener() {
+
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_DOWN ) {
+                        isScreenTouched[0] = true;
+                    }
+                    return isScreenTouched[0];
+                }
+
+            });
+            if (isScreenTouched[0] = true) {
+                pressedButtons.add(button);
+            }
+        }
+
+        return pressedButtons;
+    }*/
 
 
 
