@@ -55,45 +55,42 @@ public class Shapes {
 
         //for button that are touched in allButtons
         Button[] validButtons = Arrays.copyOfRange(allButtons, 1, 25);
-        final Button button = validButtons[0];
-        final boolean[] isScreenTouched = {false};
+        //final Button button = validButtons[0];
+        //final boolean[] isScreenTouched = {false};
+        for (final Button button: validButtons) {
+            button.setOnTouchListener(new Button.OnTouchListener() {
+                @Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    float x = event.getX();
+                    float y = event.getY();
+                    switch (event.getAction()) {
+                        case MotionEvent.ACTION_DOWN:
+                            button.setText("click");
+                            break;
+                        case MotionEvent.ACTION_MOVE:
+                            button.setText("touch");
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            button.setText("F");
+                            break;
+                    }
 
-        button.setOnTouchListener(new Button.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                float x = event.getX();
-                float y = event.getY();
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        button.setText("click");
-                        break;
-                    case MotionEvent.ACTION_MOVE:
-                        button.setText("touch");
-                        break;
-                    case MotionEvent.ACTION_UP:
-                        button.setText("uppp");
-                        break;
+                    return true;
                 }
 
-                return true;
-            }
+
+                /*@Override
+                public boolean onTouch(View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_MOVE ) {
+                        isScreenTouched[0] = true;
+                    }
+                    return isScreenTouched[0];
+                }*/
+
+            });
 
 
-            /*@Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_MOVE ) {
-                    isScreenTouched[0] = true;
-                }
-                return isScreenTouched[0];
-            }*/
-
-        });
-        if (isScreenTouched[0] = true) {
-            button.setText("hello");
-            pressedButtons.add(button);
         }
-
-
         return pressedButtons;
     }
 
