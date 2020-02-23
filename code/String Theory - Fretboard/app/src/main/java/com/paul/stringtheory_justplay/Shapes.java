@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 
 public class Shapes {
@@ -15,7 +20,11 @@ public class Shapes {
     public Activity activity;
     private Button[] allButtons = new Button[25];
     private ArrayList<Button> pressedNotes = new ArrayList<Button>(0);
+    private int chord;
 
+    public Button[] getAllButtons(){
+        return allButtons;
+    }
 
     //constructor
     public Shapes(Activity _activity){
@@ -27,12 +36,38 @@ public class Shapes {
     }
 
     public boolean isShapeValid(){
-        //is listOfNotes a valid shape?
-        return true;
+        //create hashmap instance
+        ChordShapesHashMap hashM = new ChordShapesHashMap();
+        //get map
+        HashMap<Integer, ArrayList<Button>> map = ChordShapesHashMap.getMap();
+        //search item in map
+        //iterate through map
+        /*Iterator it = map.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            //PROPER EQUALS METHOD NEEDED!
+            if (pair.getValue() ==pressedNotes){
+                //set chord
+                chord = (int) pair.getKey();
+                return true;
+            }
+
+            it.remove(); // avoids a ConcurrentModificationException
+        }*/
+        //hardcoding c chord
+        ArrayList<Button> cChord = new ArrayList<Button>(
+                Arrays.<Button>asList(allButtons[17], allButtons[10], allButtons[7]));
+
+        if (cChord.containsAll(pressedNotes) && pressedNotes.containsAll(cChord)){
+            return true;
+
+        }
+        else{ return false;}
     }
 
-    public void getChord(){
-        //returns a chord associated with that shape
+
+    public int getChord(){
+        return chord; //returns soundfile link
     }
 
     public void setAllButtons(){
@@ -81,5 +116,4 @@ public class Shapes {
             });
         }
     }
-
 }

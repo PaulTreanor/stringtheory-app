@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playChord(View v) {
-        Log.d("BUTTON", "hello");
         chordShape.testButtons();
 
         //check is chord_shape is valid
+        Log.d("VALID", String.valueOf(chordShape.isShapeValid()));
         if (chordShape.isShapeValid()){
             if (player !=null) {
                 stopPlayer();
