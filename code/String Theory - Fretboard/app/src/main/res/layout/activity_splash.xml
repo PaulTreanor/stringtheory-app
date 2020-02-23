@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".MainActivity">
+    tools:context=".SplashActivity"
+    android:screenOrientation="landscape" >
 
     <ImageView
         android:id="@+id/imageView"
@@ -18,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43"
-        app:srcCompat="@drawable/stringtheorylogo" />
+        app:srcCompat="@drawable/stringtheorylogo"
+        android:contentDescription="@string/app_name"/>
 
     <ProgressBar
         android:id="@+id/textView"
