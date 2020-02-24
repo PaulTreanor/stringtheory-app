@@ -13,16 +13,14 @@ import android.widget.Button;
 
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
-    //rprivate Button[] allButtons = new Button[25];
-
     private static MainActivity instance;
     private Shapes chordShape;
-    //testing passing chords
-    private int chord = R.raw.dm;
+
 
 
     @Override
@@ -36,10 +34,14 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //list all buttons on fretboards
-        //setAllButtons();
+        //set up listener to see which buttons are being pressed
         chordShape = new Shapes(this);
         chordShape.setAllButtons();
         chordShape.pressedButtons();
+        //set map
+        chordShape.setMap();
+
+
     }
 
     //allows methods from MainAcitvity to be called from other classes
@@ -57,9 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 stopPlayer();
             }
 
-            //use shape to find chord file to use
-            //chord = chordShape.getChord(); - findChord function of Shape class;
-            player = MediaPlayer.create(this, chord); //what type is dm and how do I set a variable to be equal to it
+            int chord = chordShape.getChord();
+            player = MediaPlayer.create(this, chord);
 
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
