@@ -2,7 +2,6 @@ package com.paul.stringtheory_justplay;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Shapes {
+
     public Activity activity;
     private Button[] allButtons = new Button[25];
     private ArrayList<Button> pressedNotes = new ArrayList<Button>(0);
@@ -22,7 +22,7 @@ public class Shapes {
     public Shapes(Activity _activity){
         this.activity = _activity;
     }
-    
+
     public void setMap() {
         ChordShapesHashMap chordShapesHashMap = new ChordShapesHashMap(allButtons);
         this.map = chordShapesHashMap.getMap();
@@ -41,13 +41,13 @@ public class Shapes {
         return false;
     }
 
+    //equals method for chord shapes
     public boolean shapesEquals( ArrayList<Button> chordA, ArrayList<Button> chordB){
         if (chordA.containsAll(chordB) && chordB.containsAll(chordA)){
             return true;
         }
         else{ return false;}
     }
-
 
     public int getChord()
     {
@@ -63,7 +63,7 @@ public class Shapes {
 
     @SuppressLint("ClickableViewAccessibility")
     public void pressedButtons(){
-        //for button that are touched in allButtons
+        //because allButtons begins at index 1 to make button names more intuitive
         Button[] validButtons = Arrays.copyOfRange(allButtons, 1, 25);
 
         for (final Button button: validButtons) {

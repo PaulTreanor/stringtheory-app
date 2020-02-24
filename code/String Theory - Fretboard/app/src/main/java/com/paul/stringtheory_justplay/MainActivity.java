@@ -1,19 +1,12 @@
 package com.paul.stringtheory_justplay;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
         chordShape.pressedButtons();
         //set map
         chordShape.setMap();
-
-
     }
 
     //allows methods from MainAcitvity to be called from other classes
@@ -50,25 +41,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void playChord(View v) {
-        chordShape.testButtons();
-
         //check is chord_shape is valid
         Log.d("VALID", String.valueOf(chordShape.isShapeValid()));
         if (chordShape.isShapeValid()){
             if (player !=null) {
                 stopPlayer();
             }
-
             int chord = chordShape.getChord();
             player = MediaPlayer.create(this, chord);
-
+            //stops media player when sound is finished playing
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
                     stopPlayer();
                 }
             });
-
             player.start();
         }
     }
@@ -85,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop(){
         super.onStop();
         stopPlayer();
-
     }
-
 }
 
