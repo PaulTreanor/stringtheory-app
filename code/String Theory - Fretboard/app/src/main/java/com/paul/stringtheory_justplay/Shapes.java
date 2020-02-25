@@ -73,7 +73,7 @@ public class Shapes {
                 public boolean onTouch(View v, MotionEvent event) {
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
-                            button.setBackgroundResource(R.drawable.pressed_btn);
+                            button.setBackgroundResource(R.drawable.button_green);
 
                             if (!pressedNotes.contains(button)){
                                 pressedNotes.add(button);
@@ -81,13 +81,13 @@ public class Shapes {
                             break;
 
                         case MotionEvent.ACTION_MOVE:
-                            button.setBackgroundResource(R.drawable.pressed_btn);
+                            button.setBackgroundResource(R.drawable.button_green);
                             if (!pressedNotes.contains(button)){
                                 pressedNotes.add(button);
                             }
                             break;
                         case MotionEvent.ACTION_UP:
-                            button.setBackgroundResource(R.drawable.normal_btn);
+                            button.setBackgroundResource(R.drawable.button_grey);
 
                             if (pressedNotes.contains(button)){
                                 pressedNotes.remove(button);

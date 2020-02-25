@@ -6,26 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.paul.stringtheory_justplay.Views.guitarBody
+        android:id="@+id/guitarBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.paul.stringtheory_justplay.Views.guitarBody>
 
-    <com.paul.stringtheory_justplay.Views.Soundhole
-        android:layout_width="100dp"
-        android:layout_height="400dp" />
 
     <com.paul.stringtheory_justplay.Views.FretboardBackground
+        android:id="@+id/fretboardBackground"
         android:layout_width="match_parent"
         android:layout_height="970px"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
-        tools:layout_editor_absoluteX="-1dp"
+        android:background="#808080"
         android:elevation="0dp"
-        android:background="@color/colorPrimary"/>
+        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <com.paul.stringtheory_justplay.Views.background
         android:id="@+id/shapes2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guitarBody"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
@@ -279,9 +282,9 @@
         android:id="@+id/divider"
         android:layout_width="729dp"
         android:layout_height="3dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn3"
-        tools:layout_editor_absoluteX="1dp"
-        android:background = "@color/colorPrimary"/>
+        android:background="#A0522D"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground"
+        tools:layout_editor_absoluteX="1dp" />
 
     <View
         android:id="@+id/divider2"
@@ -289,16 +292,17 @@
         android:layout_height="3dp"
         app:layout_constraintTop_toBottomOf="@+id/btn23"
         tools:layout_editor_absoluteX="1dp"
-        android:background = "@color/colorPrimary"
+        android:background = "#A0522D"
         />
 
     <Button
         android:id="@+id/soundhole_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="play"
+        android:layout_marginTop="200dp"
         android:onClick="playChord"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:text="play"
+        app:layout_constraintTop_toTopOf="@+id/guitarBody"
+        tools:layout_editor_absoluteX="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
