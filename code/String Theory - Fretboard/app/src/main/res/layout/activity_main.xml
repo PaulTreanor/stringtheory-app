@@ -20,16 +20,19 @@
         android:layout_marginBottom="20dp"
         android:background="#808080"
         android:elevation="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <com.paul.stringtheory_justplay.Views.background
-        android:id="@+id/shapes2"
-        android:layout_width="match_parent"
+        android:id="@+id/background"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn12"
         app:layout_constraintStart_toStartOf="@+id/guitarBody"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        android:onClick="playChord"
+        />
 
     <Button
         android:id="@+id/btn21"
@@ -40,18 +43,18 @@
         android:background="@drawable/button_design"
         android:text="F"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
 
+        android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="F"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/btn5"
@@ -88,12 +91,12 @@
         android:id="@+id/btn17"
         android:layout_width="130dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
 
+        android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/btn21"
-        app:layout_constraintEnd_toEndOf="@+id/shapes2" />
+        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
 
     <Button
         android:id="@+id/btn22"
@@ -164,7 +167,7 @@
         android:background="@drawable/button_design"
 
         android:text="G"
-        app:layout_constraintBottom_toBottomOf="@+id/shapes2"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toStartOf="@+id/btn22" />
 
     <Button
@@ -295,14 +298,6 @@
         android:background = "#A0522D"
         />
 
-    <Button
-        android:id="@+id/soundhole_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:onClick="playChord"
-        android:text="play"
-        app:layout_constraintTop_toTopOf="@+id/guitarBody"
-        tools:layout_editor_absoluteX="10dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

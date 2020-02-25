@@ -51,11 +51,11 @@ public class background extends View {
     protected void onDraw(Canvas canvas){
 
         //create rectangle
-        Rect rect = new Rect();
+        /*Rect rect = new Rect();
         rect.top = 55;
         rect.left = 1820;
         rect.bottom = rect.top + 970;
-        rect.right = rect.left + 100;
+        rect.right = rect.left + 100;*/
 
         //define circle parameters
         float cx = -330;
@@ -68,6 +68,6 @@ public class background extends View {
 
         //draw circle and rectangle
         canvas.drawCircle(cx, cy, radius, paint);
-        canvas.drawRect(rect, paint);
+        //canvas.drawRect(rect, paint);
     }
 }
