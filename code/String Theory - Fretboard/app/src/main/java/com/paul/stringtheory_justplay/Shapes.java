@@ -2,6 +2,7 @@ package com.paul.stringtheory_justplay;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -72,20 +73,22 @@ public class Shapes {
                 public boolean onTouch(View v, MotionEvent event) {
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
-                            button.setText("click");
+                            button.setBackgroundResource(R.drawable.pressed_btn);
+
                             if (!pressedNotes.contains(button)){
                                 pressedNotes.add(button);
                             }
                             break;
 
                         case MotionEvent.ACTION_MOVE:
-                            button.setText("touch");
+                            button.setBackgroundResource(R.drawable.pressed_btn);
                             if (!pressedNotes.contains(button)){
                                 pressedNotes.add(button);
                             }
                             break;
                         case MotionEvent.ACTION_UP:
-                            button.setText("F");
+                            button.setBackgroundResource(R.drawable.normal_btn);
+
                             if (pressedNotes.contains(button)){
                                 pressedNotes.remove(button);
                             }
