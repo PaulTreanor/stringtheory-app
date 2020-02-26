@@ -1,25 +1,19 @@
 package com.paul.stringtheory_justplay;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.pm.ActivityInfo;
-import android.media.JetPlayer;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Toast;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
-    private String demoFileName = "hello.txt";
-    private Toast textViewPathHint;
+    private static MainActivity instance;
+    private Shapes chordShape;
+
 
 
     @Override
@@ -32,40 +26,40 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
+        //list all buttons on fretboards
+        //set up listener to see which buttons are being pressed
+        chordShape = new Shapes(this);
+        chordShape.setAllButtons();
+        chordShape.pressedButtons();
+        //set map
+        chordShape.setMap();
     }
 
-    //int[] pitchArray = {JMC.A5, JMC.D5, JMC.F5};
-    //Chords newChord = new Chords(pitchArray);
+    //allows methods from MainAcitvity to be called from other classes
+    public static MainActivity getInstance() {
+        return instance;
+    }
 
 
-
-    public void playf(View v) throws IOException {
-
-        if (player ==null){
-            //player.setDataSource(R.raw.chords);
-            player = MediaPlayer.create(this, R.raw.a_chord);
+    //called from button
+    public void playChord(View v) {
+        //check is chord_shape is valid
+        Log.d("VALID", String.valueOf(chordShape.isShapeValid()));
+        if (chordShape.isShapeValid()){
+            if (player !=null) {
+                stopPlayer();
+            }
+            int chord = chordShape.getChord();
+            player = MediaPlayer.create(this, chord);
+            //stops media player when sound is finished playing
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mp) {
                     stopPlayer();
                 }
             });
+            player.start();
         }
-        player.start();
-
-    }
-    public void pause(View v){
-        if (player  !=null){
-            player.pause();
-        }
-
-    }
-    public void stop(View v){
-
-        stopPlayer();
     }
 
     private void stopPlayer(){
@@ -74,14 +68,12 @@ public class MainActivity extends AppCompatActivity {
             player = null;
         }
     }
+
+    //stops MediaPlayer upon leaving app
     @Override
     protected void onStop(){
         super.onStop();
         stopPlayer();
-
     }
-
-
-
 }
 
