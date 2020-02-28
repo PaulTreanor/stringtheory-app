@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">StringTheory</string>
-
-    <string name="second_page">Welcome to the second page!</string>
-    <string name="freestyle">Freestyle Mode</string>
-    <string name="settings">Setting</string>
-</resources>
