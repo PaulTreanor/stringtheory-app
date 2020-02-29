@@ -4,99 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="landscape"
     tools:context=".MainActivity">
 
-    <com.paul.stringtheory_justplay.Views.guitarBody
+    <com.paul.stringtheory_justplay.Views.guitarBody.guitarBody
         android:id="@+id/guitarBody"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ></com.paul.stringtheory_justplay.Views.guitarBody>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.paul.stringtheory_justplay.Views.guitarBody.guitarBody>
 
 
-    <com.paul.stringtheory_justplay.Views.FretboardBackground
+    <com.paul.stringtheory_justplay.Views.FretboardBackground.FretboardBackground
         android:id="@+id/fretboardBackground"
-        android:layout_width="match_parent"
-        android:layout_height="970px"
-        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
         android:background="#808080"
-        android:elevation="0dp"
-        app:layout_constraintBottom_toBottomOf="@+id/background"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.paul.stringtheory_justplay.Views.background
+    <com.paul.stringtheory_justplay.Views.background.background
         android:id="@+id/background"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn12"
-        app:layout_constraintStart_toStartOf="@+id/guitarBody"
-        tools:layout_editor_absoluteY="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:onClick="playChord"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
 
     <Button
         android:id="@+id/btn21"
         android:layout_width="130dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/button_design"
         android:text="F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/fretboardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/middleLine" />
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="130dp"
-        android:layout_height="53dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
 
-        android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="F"
-        app:layout_constraintBottom_toTopOf="@+id/btn5"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/middleLine"
+        app:layout_constraintEnd_toEndOf="@+id/btn21"
+        app:layout_constraintStart_toStartOf="@+id/btn21"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn5"
-        android:layout_width="130dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
 
         android:background="@drawable/button_design"
         android:text="Bb"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="130dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/button_design"
         android:text="Eb"
-        app:layout_constraintBottom_toTopOf="@+id/btn13"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/middleLine"
+        app:layout_constraintEnd_toEndOf="@+id/btn5"
+        app:layout_constraintStart_toStartOf="@+id/btn5"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
 
     <Button
         android:id="@+id/btn13"
-        android:layout_width="130dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="123dp"
         android:background="@drawable/button_design"
         android:text="G#"
-        app:layout_constraintBottom_toTopOf="@+id/btn17"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="@+id/btn17"
+        app:layout_constraintStart_toStartOf="@+id/btn17"
+        app:layout_constraintTop_toTopOf="@+id/middleLine" />
 
     <Button
         android:id="@+id/btn17"
-        android:layout_width="130dp"
-        android:layout_height="53dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
 
-        android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/btn21"
-        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
+        app:layout_constraintEnd_toEndOf="@+id/btn21"
+        app:layout_constraintStart_toStartOf="@+id/btn21"
+        app:layout_constraintTop_toBottomOf="@+id/btn13" />
 
     <Button
         android:id="@+id/btn22"
@@ -283,21 +299,29 @@
 
     <View
         android:id="@+id/divider"
-        android:layout_width="729dp"
+        android:layout_width="wrap_content"
         android:layout_height="3dp"
         android:background="#A0522D"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintBottom_toTopOf="@+id/fretboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="729dp"
+        android:layout_width="wrap_content"
         android:layout_height="3dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn23"
-        tools:layout_editor_absoluteX="1dp"
-        android:background = "#A0522D"
-        />
+        android:background="#A0522D"
+        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
+        app:layout_constraintEnd_toEndOf="@+id/fretboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground" />
 
+    <View
+        android:id="@+id/middleLine"
+        style="@style/Divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
