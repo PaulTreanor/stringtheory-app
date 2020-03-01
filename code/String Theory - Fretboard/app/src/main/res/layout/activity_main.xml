@@ -19,7 +19,7 @@
         android:id="@+id/fretboardBackground"
         android:layout_width="match_parent"
         android:layout_height="970px"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:background="#808080"
         android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/background"
@@ -297,10 +297,9 @@
         android:id="@+id/divider2"
         android:layout_width="729dp"
         android:layout_height="3dp"
+        android:background="#A0522D"
         app:layout_constraintTop_toBottomOf="@+id/btn23"
-        tools:layout_editor_absoluteX="1dp"
-        android:background = "#A0522D"
-        />
+        tools:layout_editor_absoluteX="57dp" />
 
     <ImageView
         android:id="@+id/swipe"
@@ -318,6 +317,84 @@
         android:alpha="0.0"
         android:onClick="playChord"
         ></com.paul.stringtheory_justplay.Views.strumArea>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="E"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="B"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="sans-serif-black"
+        android:text="G"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
+        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="D"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="A"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="E"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/guitarBody" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
