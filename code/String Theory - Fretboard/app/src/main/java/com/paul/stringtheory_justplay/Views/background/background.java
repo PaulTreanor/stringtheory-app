@@ -1,4 +1,4 @@
-package com.paul.stringtheory_justplay.Views;
+package com.paul.stringtheory_justplay.Views.background;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -8,10 +8,13 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+
+
 
 public class background extends View {
 
@@ -58,6 +61,13 @@ public class background extends View {
         rect.right = rect.left + 100;*/
 
         //define circle parameters
+
+        DisplayMetrics displayMetrics = this.getResources().getDisplayMetrics();
+        float dpHeight = displayMetrics.heightPixels / displayMetrics.density;
+        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
+
+        //int px = getResources().getDisplayMetrics().density * dp;
+
         float cx = -330;
         float cy = 540;
         float radius = 565f;

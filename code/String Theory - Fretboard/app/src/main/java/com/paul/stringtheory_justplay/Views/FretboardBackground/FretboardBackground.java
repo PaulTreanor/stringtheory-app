@@ -1,4 +1,4 @@
-package com.paul.stringtheory_justplay.Views;
+package com.paul.stringtheory_justplay.Views.FretboardBackground;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
