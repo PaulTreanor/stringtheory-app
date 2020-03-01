@@ -8,10 +8,15 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+
+import com.paul.stringtheory_justplay.R;
 
 public class background extends View {
 
@@ -69,5 +74,7 @@ public class background extends View {
         //draw circle and rectangle
         canvas.drawCircle(cx, cy, radius, paint);
         //canvas.drawRect(rect, paint);
+
+
     }
 }

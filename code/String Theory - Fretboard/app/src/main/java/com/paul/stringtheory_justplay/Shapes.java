@@ -14,7 +14,7 @@ import java.util.Map;
 public class Shapes {
 
     public Activity activity;
-    private Button[] allButtons = new Button[25];
+    private static Button[] allButtons = new Button[25];
     private ArrayList<Button> pressedNotes = new ArrayList<Button>(0);
     private int chord;
     private HashMap<Integer, ArrayList<Button>> map;
@@ -29,8 +29,14 @@ public class Shapes {
         this.map = chordShapesHashMap.getMap();
     }
 
+    public static Button[] getAllButtons() {
+        return allButtons;
+    }
+
+
     public boolean isShapeValid(){
         //iterate through map
+
         for (Map.Entry<Integer, ArrayList<Button>> ee : map.entrySet()) {
             int key = ee.getKey();
             ArrayList<Button> values = ee.getValue();
@@ -42,6 +48,7 @@ public class Shapes {
         return false;
     }
 
+
     //equals method for chord shapes
     public boolean shapesEquals( ArrayList<Button> chordA, ArrayList<Button> chordB){
         if (chordA.containsAll(chordB) && chordB.containsAll(chordA)){
@@ -49,6 +56,7 @@ public class Shapes {
         }
         else{ return false;}
     }
+
 
     public int getChord()
     {
