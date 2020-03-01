@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
 
     <com.paul.stringtheory_justplay.Views.guitarBody
         android:id="@+id/guitarBody"
@@ -29,10 +31,9 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toStartOf="@+id/btn12"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guitarBody"
-        tools:layout_editor_absoluteY="0dp"
-        android:onClick="playChord"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn21"
@@ -40,6 +41,7 @@
         android:layout_height="53dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="20dp"
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="F"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,7 +51,7 @@
         android:id="@+id/btn1"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="F"
@@ -61,7 +63,7 @@
         android:layout_width="130dp"
         android:layout_height="53dp"
         android:layout_marginEnd="40dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="Bb"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
@@ -72,6 +74,7 @@
         android:layout_width="130dp"
         android:layout_height="53dp"
         android:layout_marginEnd="40dp"
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="Eb"
         app:layout_constraintBottom_toTopOf="@+id/btn13"
@@ -82,6 +85,7 @@
         android:layout_width="130dp"
         android:layout_height="53dp"
         android:layout_marginEnd="40dp"
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="G#"
         app:layout_constraintBottom_toTopOf="@+id/btn17"
@@ -91,7 +95,7 @@
         android:id="@+id/btn17"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:layout_marginEnd="40dp"
         android:background="@drawable/button_design"
         android:text="C"
@@ -104,7 +108,7 @@
         android:layout_height="53dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
-
+        android:textStyle="bold"
         android:text="F#"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn21" />
@@ -113,7 +117,7 @@
         android:id="@+id/btn18"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="C#"
         app:layout_constraintBottom_toTopOf="@+id/btn22"
@@ -123,7 +127,7 @@
         android:id="@+id/btn14"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="A"
         app:layout_constraintBottom_toTopOf="@+id/btn18"
@@ -133,7 +137,7 @@
         android:id="@+id/btn10"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="E"
         app:layout_constraintBottom_toTopOf="@+id/btn14"
@@ -143,7 +147,7 @@
         android:id="@+id/btn6"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="B"
         app:layout_constraintBottom_toTopOf="@+id/btn10"
@@ -153,7 +157,7 @@
         android:id="@+id/btn2"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="F#"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
@@ -165,7 +169,7 @@
         android:layout_height="53dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
-
+        android:textStyle="bold"
         android:text="G"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toStartOf="@+id/btn22" />
@@ -174,7 +178,7 @@
         android:id="@+id/btn19"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="D"
         app:layout_constraintBottom_toTopOf="@+id/btn23"
@@ -184,7 +188,7 @@
         android:id="@+id/btn15"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="Bb"
         app:layout_constraintBottom_toTopOf="@+id/btn19"
@@ -194,7 +198,7 @@
         android:id="@+id/btn11"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="F"
         app:layout_constraintBottom_toTopOf="@+id/btn15"
@@ -204,7 +208,7 @@
         android:id="@+id/btn7"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="C"
         app:layout_constraintBottom_toTopOf="@+id/btn11"
@@ -214,7 +218,7 @@
         android:id="@+id/btn3"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="G"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
@@ -226,7 +230,7 @@
         android:layout_height="53dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_design"
-
+        android:textStyle="bold"
         android:text="G#"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn23" />
@@ -235,7 +239,7 @@
         android:id="@+id/btn20"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="Eb"
         app:layout_constraintBottom_toTopOf="@+id/btn24"
@@ -245,7 +249,7 @@
         android:id="@+id/btn16"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="B"
         app:layout_constraintBottom_toTopOf="@+id/btn20"
@@ -255,7 +259,7 @@
         android:id="@+id/btn12"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="F#"
         app:layout_constraintBottom_toTopOf="@+id/btn16"
@@ -265,7 +269,7 @@
         android:id="@+id/btn8"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="C#"
         app:layout_constraintBottom_toTopOf="@+id/btn12"
@@ -275,7 +279,7 @@
         android:id="@+id/btn4"
         android:layout_width="130dp"
         android:layout_height="53dp"
-
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="G#"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
@@ -298,6 +302,22 @@
         android:background = "#A0522D"
         />
 
+    <ImageView
+        android:id="@+id/swipe"
+        android:layout_width="73dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="150dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/swipe"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <com.paul.stringtheory_justplay.Views.strumArea
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:onClick="playChord"
+        ></com.paul.stringtheory_justplay.Views.strumArea>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
