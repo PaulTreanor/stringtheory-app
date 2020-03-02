@@ -53,6 +53,7 @@
         android:id="@+id/btn1"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/f"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
@@ -64,6 +65,7 @@
         android:id="@+id/btn5"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/bb"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
@@ -111,6 +113,7 @@
         android:id="@+id/btn22"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
@@ -123,6 +126,7 @@
         android:id="@+id/btn18"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/csharp"
         app:layout_constraintBottom_toTopOf="@+id/btn22"
@@ -135,6 +139,7 @@
         android:id="@+id/btn14"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/a"
         app:layout_constraintBottom_toTopOf="@+id/btn18"
@@ -147,6 +152,7 @@
         android:id="@+id/btn10"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/e"
         app:layout_constraintBottom_toTopOf="@+id/btn14"
@@ -159,6 +165,7 @@
         android:id="@+id/btn6"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/b"
         app:layout_constraintBottom_toTopOf="@+id/btn10"
@@ -171,6 +178,7 @@
         android:id="@+id/btn2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
@@ -196,6 +204,7 @@
         android:id="@+id/btn19"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/d"
         app:layout_constraintBottom_toTopOf="@+id/btn23"
@@ -208,6 +217,7 @@
         android:id="@+id/btn15"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/bb"
         app:layout_constraintBottom_toTopOf="@+id/btn19"
@@ -233,6 +243,7 @@
         android:id="@+id/btn7"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/c"
         app:layout_constraintBottom_toTopOf="@+id/btn11"
@@ -245,6 +256,7 @@
         android:id="@+id/btn3"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/g"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
@@ -257,6 +269,7 @@
         android:id="@+id/btn24"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/gsharp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
@@ -270,6 +283,7 @@
         android:id="@+id/btn20"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/eb"
         app:layout_constraintBottom_toTopOf="@+id/btn24"
@@ -283,6 +297,7 @@
         android:id="@+id/btn16"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/b"
         app:layout_constraintBottom_toTopOf="@+id/btn20"
@@ -296,6 +311,7 @@
         android:id="@+id/btn12"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn16"
@@ -309,6 +325,7 @@
         android:id="@+id/btn8"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:background="@drawable/button_design"
         android:text="@string/csharp"
         app:layout_constraintBottom_toTopOf="@+id/btn12"
@@ -322,7 +339,8 @@
         android:id="@+id/btn4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-       android:background="@drawable/button_design"
+
+        android:background="@drawable/button_design"
         android:text="@string/gsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
