@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></com.paul.stringtheory_justplay.Views.guitarBody.guitarBody>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.paul.stringtheory_justplay.Views.FretboardBackground.FretboardBackground
@@ -43,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/button_design"
-        android:text="F"
+        android:text="@string/f"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn22"
@@ -55,7 +55,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="F"
+        android:text="@string/f"
         app:layout_constraintBottom_toTopOf="@+id/btn5"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn2"
@@ -67,7 +67,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="Bb"
+        android:text="@string/bb"
         app:layout_constraintBottom_toTopOf="@+id/btn9"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn6"
@@ -78,7 +78,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/button_design"
-        android:text="Eb"
+        android:text="@string/eb"
         app:layout_constraintBottom_toTopOf="@+id/btn13"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn10"
@@ -89,7 +89,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/button_design"
-        android:text="G#"
+        android:text="@string/gsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn17"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn14"
@@ -101,7 +101,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="C"
+        android:text="@string/c"
         app:layout_constraintBottom_toTopOf="@+id/btn21"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toEndOf="@+id/btn18"
@@ -113,7 +113,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="F#"
+        android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toStartOf="@+id/btn21"
         app:layout_constraintHorizontal_bias="0.5"
@@ -126,7 +126,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="C#"
+        android:text="@string/csharp"
         app:layout_constraintBottom_toTopOf="@+id/btn22"
         app:layout_constraintEnd_toStartOf="@+id/btn17"
         app:layout_constraintHorizontal_bias="0.5"
@@ -139,7 +139,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="A"
+        android:text="@string/a"
         app:layout_constraintBottom_toTopOf="@+id/btn18"
         app:layout_constraintEnd_toStartOf="@+id/btn13"
         app:layout_constraintHorizontal_bias="0.5"
@@ -152,7 +152,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="E"
+        android:text="@string/e"
         app:layout_constraintBottom_toTopOf="@+id/btn14"
         app:layout_constraintEnd_toStartOf="@+id/btn9"
         app:layout_constraintHorizontal_bias="0.5"
@@ -165,7 +165,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="B"
+        android:text="@string/b"
         app:layout_constraintBottom_toTopOf="@+id/btn10"
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintHorizontal_bias="0.5"
@@ -178,7 +178,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="F#"
+        android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn6"
         app:layout_constraintEnd_toStartOf="@+id/btn1"
         app:layout_constraintHorizontal_bias="0.5"
@@ -191,7 +191,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="G"
+        android:text="@string/g"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toStartOf="@+id/btn22"
         app:layout_constraintHorizontal_bias="0.5"
@@ -204,7 +204,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="D"
+        android:text="@string/d"
         app:layout_constraintBottom_toTopOf="@+id/btn23"
         app:layout_constraintEnd_toStartOf="@+id/btn18"
         app:layout_constraintHorizontal_bias="0.5"
@@ -217,7 +217,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="Bb"
+        android:text="@string/bb"
         app:layout_constraintBottom_toTopOf="@+id/btn19"
         app:layout_constraintEnd_toStartOf="@+id/btn14"
         app:layout_constraintHorizontal_bias="0.5"
@@ -230,7 +230,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="F"
+        android:text="@string/f"
         app:layout_constraintBottom_toTopOf="@+id/btn15"
         app:layout_constraintEnd_toStartOf="@+id/btn10"
         app:layout_constraintHorizontal_bias="0.5"
@@ -243,7 +243,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="C"
+        android:text="@string/c"
         app:layout_constraintBottom_toTopOf="@+id/btn11"
         app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintHorizontal_bias="0.5"
@@ -256,7 +256,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="G"
+        android:text="@string/g"
         app:layout_constraintBottom_toTopOf="@+id/btn7"
         app:layout_constraintEnd_toStartOf="@+id/btn2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -269,7 +269,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="G#"
+        android:text="@string/gsharp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toStartOf="@+id/btn23"
         app:layout_constraintHorizontal_bias="0.5"
@@ -283,7 +283,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="Eb"
+        android:text="@string/eb"
         app:layout_constraintBottom_toTopOf="@+id/btn24"
         app:layout_constraintEnd_toStartOf="@+id/btn19"
         app:layout_constraintHorizontal_bias="0.5"
@@ -297,7 +297,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="B"
+        android:text="@string/b"
         app:layout_constraintBottom_toTopOf="@+id/btn20"
         app:layout_constraintEnd_toStartOf="@+id/btn15"
         app:layout_constraintHorizontal_bias="0.5"
@@ -311,7 +311,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="F#"
+        android:text="@string/fsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn16"
         app:layout_constraintEnd_toStartOf="@+id/btn11"
         app:layout_constraintHorizontal_bias="0.5"
@@ -325,7 +325,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="C#"
+        android:text="@string/csharp"
         app:layout_constraintBottom_toTopOf="@+id/btn12"
         app:layout_constraintEnd_toStartOf="@+id/btn7"
         app:layout_constraintHorizontal_bias="0.0"
@@ -339,7 +339,7 @@
         android:layout_height="0dp"
 
         android:background="@drawable/button_design"
-        android:text="G#"
+        android:text="@string/gsharp"
         app:layout_constraintBottom_toTopOf="@+id/btn8"
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintHorizontal_bias="0.0"
