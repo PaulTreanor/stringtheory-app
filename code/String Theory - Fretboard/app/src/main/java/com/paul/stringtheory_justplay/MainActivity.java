@@ -1,11 +1,17 @@
 package com.paul.stringtheory_justplay;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.os.Vibrator;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Shapes chordShape;
 
 
-
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             player.start();
+        } else {
+            vibrator();
         }
     }
 
@@ -74,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop(){
         super.onStop();
         stopPlayer();
+    }
+
+    //vibrator for when chord played is played wrong
+    private void vibrator() {
+        //test android version
+        if (Build.VERSION.SDK_INT >= 26) {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(150, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(150);
+        }
     }
 }
 
