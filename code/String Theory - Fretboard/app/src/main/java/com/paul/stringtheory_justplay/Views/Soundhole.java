@@ -1,4 +1,4 @@
-package com.paul.stringtheory_justplay.Views.Soundhole;
+package com.paul.stringtheory_justplay.Views;
 
 import android.content.Context;
 import android.util.AttributeSet;

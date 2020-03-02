@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:screenOrientation="landscape"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <com.paul.stringtheory_justplay.Views.guitarBody.guitarBody
+
+    <com.paul.stringtheory_justplay.Views.guitarBody
         android:id="@+id/guitarBody"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,26 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.paul.stringtheory_justplay.Views.FretboardBackground.FretboardBackground
+    <com.paul.stringtheory_justplay.Views.FretboardBackground
         android:id="@+id/fretboardBackground"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="970px"
+        android:layout_marginBottom="15dp"
         android:background="#808080"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
-    <com.paul.stringtheory_justplay.Views.background.background
+    <com.paul.stringtheory_justplay.Views.background
         android:id="@+id/background"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:onClick="playChord"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn12"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guitarBody"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn21"
@@ -73,8 +73,10 @@
 
     <Button
         android:id="@+id/btn9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"
         android:background="@drawable/button_design"
         android:text="@string/eb"
         app:layout_constraintBottom_toTopOf="@+id/btn13"
@@ -331,22 +333,36 @@
 
     <View
         android:id="@+id/divider"
-        android:layout_width="wrap_content"
+        android:layout_width="729dp"
         android:layout_height="3dp"
         android:background="#A0522D"
-        app:layout_constraintBottom_toTopOf="@+id/fretboardBackground"
-        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground"
+        tools:layout_editor_absoluteX="1dp" />
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="wrap_content"
+        android:layout_width="729dp"
         android:layout_height="3dp"
         android:background="#A0522D"
-        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
-        app:layout_constraintEnd_toEndOf="@+id/fretboardBackground"
-        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground" />
+        app:layout_constraintTop_toBottomOf="@+id/btn23"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <ImageView
+        android:id="@+id/swipe"
+        android:layout_width="73dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="150dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/swipe"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <com.paul.stringtheory_justplay.Views.strumArea
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:onClick="playChord"
+        ></com.paul.stringtheory_justplay.Views.strumArea>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

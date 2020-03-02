@@ -13,23 +13,28 @@ import java.util.Map;
 
 public class Shapes {
 
-    public Activity activity;
-    private Button[] allButtons = new Button[25];
-    private ArrayList<Button> pressedNotes = new ArrayList<Button>(0);
+    private Activity activity;
+    private static Button[] allButtons = new Button[25];
+    private ArrayList<Button> pressedNotes = new ArrayList<>(0);
     private int chord;
     private HashMap<Integer, ArrayList<Button>> map;
 
     //constructor
-    public Shapes(Activity _activity){
+    Shapes(Activity _activity){
         this.activity = _activity;
     }
 
-    public void setMap() {
+    void setMap() {
         ChordShapesHashMap chordShapesHashMap = new ChordShapesHashMap(allButtons);
-        this.map = chordShapesHashMap.getMap();
+        this.map = ChordShapesHashMap.getMap();
     }
 
-    public boolean isShapeValid(){
+    public static Button[] getAllButtons() {
+        return allButtons;
+    }
+
+
+    boolean isShapeValid(){
         //iterate through map
         for (Map.Entry<Integer, ArrayList<Button>> ee : map.entrySet()) {
             int key = ee.getKey();
@@ -42,28 +47,27 @@ public class Shapes {
         return false;
     }
 
+
     //equals method for chord shapes
-    public boolean shapesEquals( ArrayList<Button> chordA, ArrayList<Button> chordB){
-        if (chordA.containsAll(chordB) && chordB.containsAll(chordA)){
-            return true;
-        }
-        else{ return false;}
+    private boolean shapesEquals( ArrayList<Button> chordA, ArrayList<Button> chordB){
+        return chordA.containsAll(chordB) && chordB.containsAll(chordA);
     }
 
-    public int getChord()
+
+    int getChord()
     {
         return chord;
     }
 
-    public void setAllButtons(){
+    void setAllButtons(){
         for (int i = 1; i < 25; i++) {
             int id = this.activity.getResources().getIdentifier("btn"+ i, "id", this.activity.getPackageName());
-            allButtons[i] = (Button) this.activity.findViewById(id);
+            allButtons[i] = this.activity.findViewById(id);
         }
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    public void pressedButtons(){
+    void pressedButtons(){
         //because allButtons begins at index 1 to make button names more intuitive
         Button[] validButtons = Arrays.copyOfRange(allButtons, 1, 25);
 
@@ -73,13 +77,6 @@ public class Shapes {
                 public boolean onTouch(View v, MotionEvent event) {
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
-                            button.setBackgroundResource(R.drawable.button_green);
-
-                            if (!pressedNotes.contains(button)){
-                                pressedNotes.add(button);
-                            }
-                            break;
-
                         case MotionEvent.ACTION_MOVE:
                             button.setBackgroundResource(R.drawable.button_green);
                             if (!pressedNotes.contains(button)){
@@ -89,9 +86,7 @@ public class Shapes {
                         case MotionEvent.ACTION_UP:
                             button.setBackgroundResource(R.drawable.button_grey);
 
-                            if (pressedNotes.contains(button)){
-                                pressedNotes.remove(button);
-                            }
+                            pressedNotes.remove(button);
                             break;
                         default:
                             throw new IllegalStateException("Unexpected value: " + event.getAction());

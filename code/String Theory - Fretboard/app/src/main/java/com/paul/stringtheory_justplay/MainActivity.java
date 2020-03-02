@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //called from button
+    //called from strum
     public void playChord(View v) {
         //check is chord_shape is valid
         Log.d("VALID", String.valueOf(chordShape.isShapeValid()));

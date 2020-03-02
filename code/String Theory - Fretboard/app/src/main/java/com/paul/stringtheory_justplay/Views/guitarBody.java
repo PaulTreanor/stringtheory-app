@@ -1,4 +1,4 @@
-package com.paul.stringtheory_justplay.Views.guitarBody;
+package com.paul.stringtheory_justplay.Views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
