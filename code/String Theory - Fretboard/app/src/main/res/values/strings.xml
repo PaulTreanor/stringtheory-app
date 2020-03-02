@@ -2,16 +2,4 @@
     <string name="app_name">String Theory - Just Play</string>
     <string name="freestyle">Freestyle Mode</string>
     <string name="settings">Setting</string>
-    <string name="f">F</string>
-    <string name="fsharp">F#</string>
-    <string name="c">C</string>
-    <string name="csharp">C#</string>
-    <string name="a">A</string>
-    <string name="bb">Bb</string>
-    <string name="eb">Eb</string>
-    <string name="gsharp">G#</string>
-    <string name="g">G</string>
-    <string name="e">E</string>
-    <string name="b">B</string>
-    <string name="d">D</string>
 </resources>
