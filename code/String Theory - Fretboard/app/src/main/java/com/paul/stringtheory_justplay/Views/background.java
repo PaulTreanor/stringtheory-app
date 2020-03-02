@@ -47,22 +47,28 @@ public class background extends View {
 
     }
 
+
     @Override
     protected void onDraw(Canvas canvas){
 
         //define paint object to colour circle
-        @SuppressLint("DrawAllocation") Paint paint = new Paint();
-        paint.setColor(Color.rgb(66,66,66));
+        @SuppressLint("DrawAllocation") Paint paintGrey = new Paint();
+        paintGrey.setColor(Color.rgb(66,66,66));
+        @SuppressLint("DrawAllocation") Paint paintBlack = new Paint();
+        paintBlack.setColor(Color.rgb(0,0,0));
 
         //define circle parameters
         float cx = -150;
-        int cy = (int) ((getHeight() / 2) - ((paint.descent() + paint.ascent()) / 2));
+        float cy = (int) ((getHeight() / 2) - ((paintGrey.descent() + paintGrey.ascent()) / 2));
         //above is the distance from the baseline to the center
 
-        float radius = 350f;
+        float r1 = 350f;
+        float r2 = 340f;
 
         //draw circle
-        canvas.drawCircle(cx, cy, radius, paint);
+        canvas.drawCircle(cx, cy, r1, paintBlack);
+        canvas.drawCircle(cx, cy, r2, paintGrey);
+
         //canvas.drawRect(rect, paint);
 
 
