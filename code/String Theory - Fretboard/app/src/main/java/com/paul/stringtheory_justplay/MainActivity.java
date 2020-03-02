@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //list all buttons on fretboards
+        //list all buttons on fretboard
         //set up listener to see which buttons are being pressed
         chordShape = new Shapes(this);
         chordShape.setAllButtons();
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         chordShape.setMap();
     }
 
-    //allows methods from MainAcitvity to be called from other classes
+    //allows methods from MainActivity to be called from other classes
     public static MainActivity getInstance() {
         return instance;
     }
