@@ -17,7 +17,6 @@
 
 
 
-
 Paul Treanor - [paul.treanor5@mail.dcu.ie](mailto:paul.treanor5@mail.dcu.ie)
 
 Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
@@ -27,11 +26,12 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 ### Table of contents
 
 
-
+<a name="overview"></a>
 ### Overview
 
 StringTheory is an Android app designed to help users learn and practice guitar chords. The app can be played anywhere, unlike a guitar, and can also be used with headphones. StringTheory also aims to be easier to use than a guitar, since playing it does not hurt your fingers.
 
+<a name="installation"></a>
 ### Installation instructions
 
 To install string theory you must have an Android device, preferably a phone because a tablet is too big to be used to practice the guitar effectively. Using your Android phone click on the following Google Drive link and download the stringtheory.apk file.
@@ -47,7 +47,7 @@ Once installed select &quot;open&quot; to open the app. The app can be reopened 
 <img src="images/install.png" alt="install" width="350"/>
 
 
-
+<a name="playing_chords"></a>
 ### Playing chords
 
 The app allows the user to learn, play, and practice 14 different chords. These are general chords that are used very frequently and should be enough to allow for playing many songs.
@@ -56,7 +56,7 @@ Playing a chord with StringTheory is designed to be similar to playing a chord w
 
 Once a user has selected their chosen chord by pressing down on several notes, they can swipe across the strum area to play the chord. There is a swipe gesture icon over this area to show the user where to &quot;strum&quot;.
 
-
+<a name="chords"></a>
 ### Included chords
 
 The app allows the player to play 14 chords. The chords included are A, A7, Am, B7, C, C7, D, Dm, E, E7, Em, F, G, and G7.
