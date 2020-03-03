@@ -105,5 +105,6 @@ Here are the chords included with the app and the shape (buttons pressed down) r
 ![G chord](images/g.png)
 
 #### G7
-![G7 chord](images/g7.png =100x20)
+![G7 chord](images/g7.png)
+<img src="images/g7.png" alt="drawing" width="200"/>
 
