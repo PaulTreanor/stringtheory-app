@@ -75,7 +75,7 @@ Here are the chords included with the app and the shape (buttons pressed down) r
 <img src="images/am.png" alt="am" width="500"/>
 
 #### B7
-<img src="images/bm.png" alt="bm" width="500"/>
+<img src="images/b7.png" alt="b7" width="500"/>
 
 #### C
 <img src="images/c.png" alt="c" width="500"/>
