@@ -24,6 +24,10 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 
 ### Table of contents
+[Overview](#overview)
+[Installation instructions](#installation)
+[Playing chords](#playing_chords)
+[Included chords](#chords)
 
 
 <a name="overview"></a>
