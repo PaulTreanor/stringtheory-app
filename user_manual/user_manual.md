@@ -73,4 +73,4 @@ These chords were selected because they are relatively easy to play for beginner
 Here are the chords included with the app and the shape (buttons pressed down) required to play each chord:
 
 ##A
-    ![Tux, the Linux mascot](/images/a.png)
+![A chord](images/a.png)
