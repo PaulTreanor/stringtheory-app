@@ -31,9 +31,10 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 
 <a name="overview"></a>
+<section align ="center">
 ### Overview
 
-StringTheory is an Android app designed to help users learn and practice guitar chords. The app can be played anywhere, unlike a guitar, and can also be used with headphones. StringTheory also aims to be easier to use than a guitar, since playing it does not hurt your fingers.
+StringTheory is an Android app designed to help users learn and practice guitar chords. The app can be played anywhere, unlike a guitar, and can also be used with headphones. StringTheory also aims to be easier to use than a guitar, since playing it does not hurt your fingers.</section>
 
 <a name="installation"></a>
 ### Installation instructions
