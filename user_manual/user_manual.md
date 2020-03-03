@@ -72,5 +72,45 @@ These chords were selected because they are relatively easy to play for beginner
 
 Here are the chords included with the app and the shape (buttons pressed down) required to play each chord:
 
-##A
+#### A
 ![A chord](images/a.png)
+
+#### A7
+![A7 chord](images/a7.png)
+
+#### Am
+![Am chord](images/am.png)
+
+#### B7
+![B7 chord](images/b7.png)
+
+#### C
+![C chord](images/c.png)
+
+#### C7
+![C7 chord](images/c.png)
+
+#### D
+![D chord](images/d.png)
+
+#### Dm
+![Dm chord](images/dm.png)
+
+#### E
+![E chord](images/e.png)
+
+#### E7
+![E7 chord](images/e.png)
+
+#### Em
+![Em chord](images/Em.png)
+
+#### F
+![G chord](images/f.png)
+
+#### G
+![G chord](images/g.png)
+
+#### G7
+![G7 chord](images/g7.png)
+
