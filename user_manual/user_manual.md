@@ -46,9 +46,13 @@ This file is an Android Package File, and when you download it onto an android d
 
 Select stringtheory.apk and download the file. Once the file is downloaded, click to open on your phone. From here a pop up will ask you if you want to install the application **.** Select &quot;INSTALL&quot; and the app will be installed on your phone.
 
-Once installed select &quot;open&quot; to open the app. The app can be reopened by selecting &quot;StringTheory&quot; from your app tray.
-
 <img src="images/install.png" alt="install" width="350"/>
+
+Once installed select &quot;open&quot; to open the app. The app can be reopened by selecting the StringTheory icon from your app tray.
+
+<img src="images/icon.png" alt="icon" width="350"/>
+
+
 
 
 <a name="playing_chords"></a>
