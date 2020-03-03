@@ -1,10 +1,6 @@
 ## **StringTheory User**
 **#
-[ANNOTATION:
-
-BY &#39;Paul Treanor&#39;
-ON &#39;2020-03-02T14:56:13&#39;
-NOTE: &#39;This is a 5-10 page user instruction guide on how to use the software system. It should include a step by step guide on how to use the product major components and should be written for a user and not technical audience (unless the system/product is intended for use by technical persons). You may consider including screenshots.&#39;] ****Manual**
+ ****Manual**
 
 ###
 
