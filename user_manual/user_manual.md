@@ -56,9 +56,6 @@ Playing a chord with StringTheory is designed to be similar to playing a chord w
 
 Once a user has selected their chosen chord by pressing down on several notes, they can swipe across the strum area to play the chord. There is a swipe gesture icon over this area to show the user where to &quot;strum&quot;.
 
-\*\*\*\*\*\*\*\*include image\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-
 
 ### Included chords
 
@@ -108,5 +105,5 @@ Here are the chords included with the app and the shape (buttons pressed down) r
 ![G chord](images/g.png)
 
 #### G7
-![G7 chord](images/g7.png)
+![G7 chord](images/g7.png =100x20)
 
