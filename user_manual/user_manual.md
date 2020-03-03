@@ -44,7 +44,7 @@ Select stringtheory.apk and download the file. Once the file is downloaded, clic
 
 Once installed select &quot;open&quot; to open the app. The app can be reopened by selecting &quot;StringTheory&quot; from your app tray.
 
-<img src="images/install.png" alt="install" width="500"/>
+<img src="images/install.png" alt="install" width="350"/>
 
 
 
