@@ -1,8 +1,8 @@
-## **StringTheory User**
-**#
- ****Manual**
+## **StringTheory User Manual**
 
 ###
+
+![Logo](images/logo.png)
 
 ### How to use the StringTheory Android app.
 
