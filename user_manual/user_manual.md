@@ -71,3 +71,6 @@ The app allows the player to play 14 chords. The chords included are A, A7, Am, 
 These chords were selected because they are relatively easy to play for beginners, they are popular chords used in many genres of music, and they lend themselves to be played using a touchscreen. Chords that require one finger to press down more than one string (such as barre chords) cannot be used with a touch screen and therefore we couldn&#39;t include them.
 
 Here are the chords included with the app and the shape (buttons pressed down) required to play each chord:
+
+##A
+    ![Tux, the Linux mascot](/images/a.png)
