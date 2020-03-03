@@ -11,16 +11,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="383dp"
-        android:layout_height="130dp"
+        android:layout_width="574dp"
+        android:layout_height="195dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43"
-        app:srcCompat="@drawable/stringtheorylogo"
-        android:contentDescription="@string/app_name"/>
+        app:srcCompat="@drawable/logocoloured"
+        android:contentDescription="StringTheory"/>
 
     <ProgressBar
         android:id="@+id/textView"
