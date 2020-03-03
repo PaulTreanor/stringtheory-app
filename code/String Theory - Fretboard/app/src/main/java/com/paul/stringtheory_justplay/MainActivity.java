@@ -1,11 +1,17 @@
 package com.paul.stringtheory_justplay;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.os.Vibrator;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Shapes chordShape;
 
 
-
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //list all buttons on fretboards
+        //list all buttons on fretboard
         //set up listener to see which buttons are being pressed
         chordShape = new Shapes(this);
         chordShape.setAllButtons();
@@ -35,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
         chordShape.setMap();
     }
 
-    //allows methods from MainAcitvity to be called from other classes
+    //allows methods from MainActivity to be called from other classes
     public static MainActivity getInstance() {
         return instance;
     }
 
 
-    //called from button
+    //called from strum
     public void playChord(View v) {
         //check is chord_shape is valid
         Log.d("VALID", String.valueOf(chordShape.isShapeValid()));
@@ -59,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             player.start();
+        } else {
+            vibrator();
         }
     }
 
@@ -74,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop(){
         super.onStop();
         stopPlayer();
+    }
+
+    //vibrator for when chord played is played wrong
+    private void vibrator() {
+        //test android version
+        if (Build.VERSION.SDK_INT >= 26) {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(VibrationEffect.createOneShot(150, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(150);
+        }
     }
 }
 
