@@ -24,10 +24,10 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 
 ### Table of contents
-[Overview](#overview)
-[Installation instructions](#installation)
-[Playing chords](#playing_chords)
-[Included chords](#chords)
+[Overview](#overview) <div align="right"> 2. </div>
+[Installation instructions](#installation) <div align="right"> 2. </div>
+[Playing chords](#playing_chords) <div align="right"> 3. </div>
+[Included chords](#chords) <div align="right"> 4. </div>
 
 
 <a name="overview"></a>
