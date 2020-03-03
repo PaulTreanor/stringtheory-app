@@ -66,45 +66,44 @@ These chords were selected because they are relatively easy to play for beginner
 Here are the chords included with the app and the shape (buttons pressed down) required to play each chord:
 
 #### A
-![A chord](images/a.png)
+<img src="images/a.png" alt="a" width="500"/>
 
 #### A7
-![A7 chord](images/a7.png)
+<img src="images/a7.png" alt="a7" width="500"/>
 
 #### Am
-![Am chord](images/am.png)
+<img src="images/am.png" alt="am" width="500"/>
 
 #### B7
-![B7 chord](images/b7.png)
+<img src="images/bm.png" alt="bm" width="500"/>
 
 #### C
-![C chord](images/c.png)
+<img src="images/c.png" alt="c" width="500"/>
 
 #### C7
-![C7 chord](images/c.png)
+<img src="images/c7.png" alt="c7" width="500"/>
 
 #### D
-![D chord](images/d.png)
+<img src="images/d.png" alt="d" width="500"/>
 
 #### Dm
-![Dm chord](images/dm.png)
+<img src="images/dm.png" alt="dm" width="500"/>
 
 #### E
-![E chord](images/e.png)
+<img src="images/e.png" alt="e" width="500"/>
 
 #### E7
-![E7 chord](images/e.png)
+<img src="images/e7.png" alt="e7" width="500"/>
 
 #### Em
-![Em chord](images/Em.png)
+<img src="images/em.png" alt="em" width="500"/>
 
 #### F
-![G chord](images/f.png)
+<img src="images/f.png" alt="f" width="500"/>
 
 #### G
-![G chord](images/g.png)
+<img src="images/g.png" alt="g" width="500"/>
 
 #### G7
-![G7 chord](images/g7.png)
-<img src="images/g7.png" alt="drawing" width="200"/>
+<img src="images/g7.png" alt="g7" width="500"/>
 
