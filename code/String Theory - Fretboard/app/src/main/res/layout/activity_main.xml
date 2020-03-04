@@ -41,6 +41,64 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
 
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="#A0522D"
+        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
+        app:layout_constraintEnd_toEndOf="@+id/fretboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
+        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="#A0522D"
+        app:layout_constraintBottom_toTopOf="@+id/fretboardBackground"
+        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+
+    <ImageView
+        android:id="@+id/swipe"
+        android:layout_width="0dp"
+        android:layout_height="133dp"
+        android:layout_marginEnd="31dp"
+        android:contentDescription="@string/swipe_here"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/guitarBody"
+        app:layout_constraintEnd_toEndOf="@+id/strumArea"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guitarBody"
+        app:srcCompat="@drawable/swipe" />
+
+    <com.paul.stringtheory_justplay.Views.strumArea
+        android:id="@+id/strumArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.0"
+        android:onClick="playChord"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12647754" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
     <Button
         android:id="@+id/btn21"
         android:layout_width="0dp"
@@ -377,63 +435,15 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="wrap_content"
-        android:layout_height="3dp"
-        android:background="#A0522D"
-        app:layout_constraintBottom_toTopOf="@+id/fretboardBackground"
-        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="wrap_content"
-        android:layout_height="3dp"
-        android:background="#A0522D"
-        app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
-        app:layout_constraintEnd_toEndOf="@+id/fretboardBackground"
-        app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.12647754" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.94917256" />
-
-    <ImageView
-        android:id="@+id/swipe"
-        android:layout_width="0dp"
-        android:layout_height="133dp"
-        android:layout_marginEnd="31dp"
-        android:rotation="90"
-        app:layout_constraintBottom_toTopOf="@+id/guitarBody"
-        app:layout_constraintEnd_toEndOf="@+id/strumArea"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guitarBody"
-        app:srcCompat="@drawable/swipe"
-        android:contentDescription="@string/swipe_here" />
-
-    <com.paul.stringtheory_justplay.Views.strumArea
-        android:id="@+id/strumArea"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha="0.0"
-        android:onClick="playChord"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:background="@drawable/q_button"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
