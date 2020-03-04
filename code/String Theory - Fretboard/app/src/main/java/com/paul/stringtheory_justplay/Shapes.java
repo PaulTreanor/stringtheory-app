@@ -22,12 +22,15 @@ public class Shapes {
     //constructor
     Shapes(Activity _activity){
         this.activity = _activity;
-    }
-
-    void setMap() {
+        //set all buttons
+        setAllButtons();
+        //set pressed buttons listener up
+        pressedButtons();
+        //set map
         ChordShapesHashMap chordShapesHashMap = new ChordShapesHashMap(allButtons);
         this.map = ChordShapesHashMap.getMap();
     }
+
 
     public static Button[] getAllButtons() {
         return allButtons;
@@ -36,6 +39,10 @@ public class Shapes {
 
     boolean isShapeValid(){
         //iterate through map
+        if (pressedNotes.size() ==0){
+            chord = R.raw.open;
+            return true;
+        }
         for (Map.Entry<Integer, ArrayList<Button>> ee : map.entrySet()) {
             int key = ee.getKey();
             ArrayList<Button> values = ee.getValue();
