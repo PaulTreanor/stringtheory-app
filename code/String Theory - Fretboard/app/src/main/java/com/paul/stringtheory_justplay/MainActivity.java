@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(UI_OPTIONS);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //list all buttons on fretboard
-        //set up listener to see which buttons are being pressed
+
         chordShape = new Shapes(this);
     }
 
