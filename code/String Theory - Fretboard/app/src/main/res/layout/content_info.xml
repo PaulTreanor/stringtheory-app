@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/text_margin"
             android:layout_marginEnd="32dp"
             android:text="@string/infoHeader"
             android:textAlignment="center"
@@ -32,7 +32,7 @@
             android:id="@+id/text_a7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/text_margin"
             android:text="@string/chord_a7"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -415,14 +415,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_g7" />
 
+<!--
+    Added a text footer at the bottom of the info page
+    added another divider underneath to define the bottom of the ScrollView
+    so as not ti cut off the bottom of  the text
+-->
         <TextView
             android:id="@+id/infoFooter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="18sp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginEnd="@dimen/text_margin"
             android:text="@string/infoFooter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
