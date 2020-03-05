@@ -19,8 +19,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        //variable used to load splash screen for 4 seconds
-        int SPLASH_TIME_OUT = 4000;
+        //variable used to load splash screen for 3 seconds
+        int SPLASH_TIME_OUT = 3000;
 
         //creates splash to load into the fretboard main activity
         new Handler().postDelayed(new Runnable() {
