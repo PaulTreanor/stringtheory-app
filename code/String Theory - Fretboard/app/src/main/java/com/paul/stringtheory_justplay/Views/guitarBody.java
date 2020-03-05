@@ -16,27 +16,23 @@ public class guitarBody extends View{
 
     public guitarBody(Context context) {
         super(context);
-
         init(null);
     }
 
     public guitarBody(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
-
     }
 
     public guitarBody(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
-
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public guitarBody(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(attrs);
-
     }
 
     private void init(@Nullable AttributeSet set){
@@ -44,6 +40,7 @@ public class guitarBody extends View{
     }
 
     protected void onDraw(Canvas canvas){
+
         //define paint object to colour shapes
         @SuppressLint("DrawAllocation") Paint paint = new Paint();
         paint.setColor(Color.rgb(160,82,45));
