@@ -43,10 +43,7 @@ public class MainActivity extends AppCompatActivity {
         //list all buttons on fretboard
         //set up listener to see which buttons are being pressed
         chordShape = new Shapes(this);
-        chordShape.setAllButtons();
-        chordShape.pressedButtons();
-        //set map
-        chordShape.setMap();
+
 
         //set up info button
         Button info_button = findViewById(R.id.infoButton);
