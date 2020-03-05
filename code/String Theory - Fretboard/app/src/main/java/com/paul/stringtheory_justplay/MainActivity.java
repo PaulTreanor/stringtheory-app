@@ -39,11 +39,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                              WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-
-        //list all buttons on fretboard
-        //set up listener to see which buttons are being pressed
         chordShape = new Shapes(this);
-
 
         //set up info button
         Button info_button = findViewById(R.id.infoButton);
@@ -80,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             });
             player.start();
         } else {
-            //chord wrong, then vibrate
             vibrator();
         }
     }

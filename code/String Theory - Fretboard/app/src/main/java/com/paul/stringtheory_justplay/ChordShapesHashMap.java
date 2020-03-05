@@ -15,7 +15,7 @@ class ChordShapesHashMap {
         //create a C chord shape
         ArrayList<Button> cChord = new ArrayList<>(
                 Arrays.asList(allButtons[17], allButtons[10], allButtons[7]));
-        //map c soundfile to chord shape
+        //map c sound file to chord shape
         map.put(R.raw.c, cChord);
         //Am
         ArrayList<Button> amChord = new ArrayList<>(
