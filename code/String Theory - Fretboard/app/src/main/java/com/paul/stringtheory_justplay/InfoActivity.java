@@ -1,10 +1,10 @@
 package com.paul.stringtheory_justplay;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class InfoActivity extends AppCompatActivity {
 
@@ -27,8 +28,9 @@ public class InfoActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(InfoActivity.this, MainActivity.class));
+
+                Toast.makeText(InfoActivity.this,"Time to Rock!", Toast.LENGTH_SHORT).show();
             }
         });
 
