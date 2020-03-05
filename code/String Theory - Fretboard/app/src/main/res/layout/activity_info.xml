@@ -35,6 +35,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!--Content_info is where the alyour of the xml file is located-->
     <include layout="@layout/content_info" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

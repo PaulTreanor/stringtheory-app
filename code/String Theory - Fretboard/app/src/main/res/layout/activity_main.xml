@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +8,9 @@
     android:screenOrientation="landscape"
     tools:context=".MainActivity">
 
+<!--
+    Building the UI using background, guitarBody FretboardBackground and strumArea
+-->
     <com.paul.stringtheory_justplay.Views.guitarBody
         android:id="@+id/guitarBody"
         android:layout_width="match_parent"
@@ -15,7 +19,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <com.paul.stringtheory_justplay.Views.FretboardBackground
         android:id="@+id/fretboardBackground"
@@ -30,7 +33,6 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.paul.stringtheory_justplay.Views.background
         android:id="@+id/background"
         android:layout_width="0dp"
@@ -40,6 +42,34 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+
+    <com.paul.stringtheory_justplay.Views.strumArea
+        android:id="@+id/strumArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.0"
+        android:onClick="playChord"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+        Guidelines and Dividers to be used for Constraints
+-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12647754" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
 
     <View
         android:id="@+id/divider2"
@@ -60,6 +90,9 @@
         app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
         app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
 
+<!--
+    Info and Swipe button
+-->
     <ImageView
         android:id="@+id/swipe"
         android:layout_width="0dp"
@@ -74,31 +107,21 @@
         app:layout_constraintTop_toBottomOf="@+id/guitarBody"
         app:srcCompat="@drawable/icon_swipe" />
 
-    <com.paul.stringtheory_justplay.Views.strumArea
-        android:id="@+id/strumArea"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha="0.0"
-        android:onClick="playChord"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:background="@drawable/icon_questionmark"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btn1" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.12647754" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.92" />
-
+<!--
+    All note buttons that make up the fretboard. They are constraint together
+    using Chain Constraints
+-->
     <Button
         android:id="@+id/btn21"
         android:layout_width="0dp"
@@ -434,16 +457,6 @@
         app:layout_constraintStart_toEndOf="@+id/fretboardBackground"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
-
-    <Button
-        android:id="@+id/infoButton"
-        android:layout_width="44dp"
-        android:layout_height="45dp"
-        android:background="@drawable/icon_questionmark"
-        app:layout_constraintBottom_toBottomOf="@+id/btn1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/btn1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

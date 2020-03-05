@@ -30,13 +30,13 @@ public class strumArea extends View {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(attrs);
     }
+
     private void init(@Nullable AttributeSet set) {
 
     }
 
     @Override
     protected void onDraw(Canvas canvas){
-
 
     }
 }

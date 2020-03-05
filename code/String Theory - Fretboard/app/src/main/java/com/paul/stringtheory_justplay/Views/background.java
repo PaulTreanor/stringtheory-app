@@ -17,30 +17,23 @@ public class background extends View {
 
     public background(Context context) {
         super(context);
-
         init(null);
     }
 
     public background(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-
         init(attrs);
-
     }
 
     public background(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
         init(attrs);
-
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public background(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-
         init(attrs);
-
     }
 
     private void init(@Nullable AttributeSet set) {
@@ -68,9 +61,5 @@ public class background extends View {
         //draw circle
         canvas.drawCircle(cx, cy, r1, paintBlack);
         canvas.drawCircle(cx, cy, r2, paintGrey);
-
-        //canvas.drawRect(rect, paint);
-
-
     }
 }
