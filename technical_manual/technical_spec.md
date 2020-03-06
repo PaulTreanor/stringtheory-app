@@ -23,7 +23,7 @@ Our project is called &quot;StringTheory&quot;. StringTheory is an Android appli
 
 The idea is that the phone&#39;s screen would be transformed to look like a guitar&#39;s fretboard. When the user makes a strumming motion near the base of the phone&#39;s screen, the chord the user is playing will be played. The app has fourteen chords that can be played. These chords are considered easily learnt by beginners but also widely used in most songs.
 
-If a user &quot;strums&quot; the phone without holding down on any chord, then the sound of a guitar playing all it&#39;s strings &quot;open&quot; will be played. If you strum and the chord you have pressed down is incorrect then a gentle vibration will happen. This is to give users some tactile feedback while they are practising playing chords.
+If a user &quot;strums&quot; the phone without touching any notes on the fretboard, then the sound of a guitar playing all it&#39;s strings &quot;open&quot; will be played. If you strum and the chord you have pressed down is incorrect then a gentle vibration will happen. This is to give users some tactile feedback while they are practising playing chords.
 
 <h4>1.2 Glossary</h4>
 
