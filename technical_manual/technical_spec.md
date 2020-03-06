@@ -98,7 +98,7 @@ When the user &quot;strums&quot; the touchscreen a snapshot of the pressed butto
 
 If the shape the user has pressed down doesn&#39;t match a chord in the library then the phone&#39;s vibration motor is called. If the shape pressed down does match then the sound file for that chord is sent to the MediaPlayer class. From here the data is sent to the speakers to play the audio.
 
-<h43.3 UML Class Diagram</h4>
+<h4>.3 UML Class Diagram</h4>
 
 ![UML Class Diagram](images/uml_class.png)
 
@@ -134,7 +134,8 @@ Some users felt that the interface was difficult to read, particularly because t
 
 This was an interesting idea but proved to be quite disorienting when implemented.
 
-![Upside Down Buttons](images/upside_down_text.png)
+<img src="images/upside_down_text.png" alt="Upside Down Buttons" width="500"/>
+
 
 In the end, we settled on making the lettering bolder and easier to read. A small improvement but one that gave the app&#39;s overall appearance a more robust feel.
 
