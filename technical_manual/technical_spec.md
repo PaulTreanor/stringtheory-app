@@ -1,6 +1,6 @@
-# **Technical Specification**
+<h1>Technical Specification</h1>
 
-0. Table of contents
+<h2>0. Table of contents</h2>
 
 | **        1** |
 | --- |
@@ -28,7 +28,7 @@
 
 
 
-1. Introduction
+<h2>1. Introduction</h2>
 
 1.1 Overview
 
@@ -54,7 +54,7 @@ Fretting - when a guitar player pushes on a string over a particular fret to sel
 
 Open String - When you play a string on the guitar without fretting a note, then you are said to be playing an open string.
 
-2. System Architecture
+<h2>2. System Architecture</h2>
 
 ![System Architecture Diagram](images/sys_arch.png)
 
@@ -78,7 +78,7 @@ The touch information on the strumming area must also be registered. The sound o
 
 The sound files for each chord are stored on the device&#39;s internal storage. As they are only small media files, this does not require much storage. The program requests the necessary chords to be played using the hashmap. A java class then plays the selected file through the phone&#39;s speakers.
 
-3. High-Level Design
+<h2>3. High-Level Design</h2>
 
 3.1 Context Diagram
 
@@ -114,7 +114,7 @@ In hindsight, it would have been better practice to have split MainAcitivity int
 
 Similarly, Shapes should really be divided into two classes, a class to monitor the buttons the user is pressing down and another class Shapes, which has methods to compare shapes.
 
-4. Testing
+<h2>4. Testing</h2>
 
 4.1 User Testing
 
@@ -182,7 +182,7 @@ UI Object Descriptions
 
 Each UI element should have a description for users who use a screen reader. We implemented this programmatically by looping through the buttons using the button.contentDescription() function.
 
-5. Problems and Resolution
+<h2>5. Problems and Resolution</h2>
 
 5.1 Creating chords in real time
 
@@ -218,7 +218,7 @@ We then decided to design the User-Interface to be responsive and change size ac
 
 After many attempts and using many different layouts Android Studio has to offer, we settled with using ConstraintLayout. Using this was brand new and it seems very complicated at first. Using the  &#39;Chain&#39; feature that ConstraintLayout offers achieved the responsive UI we were looking for.
 
-##6.  Installation instructions
+<h2>6.  Installation instructions</h2>
 
 To install string theory you must have an Android device, preferably a phone because a tablet is too big to be used to practice the guitar effectively. Using your Android phone click on the following Google Drive link and download the stringtheory.apk file.
 
