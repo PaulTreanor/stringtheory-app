@@ -218,6 +218,18 @@ We then decided to design the User-Interface to be responsive and change size ac
 
 After many attempts and using many different layouts Android Studio has to offer, we settled with using ConstraintLayout. Using this was brand new and it seems very complicated at first. Using the  &#39;Chain&#39; feature that ConstraintLayout offers achieved the responsive UI we were looking for.
 
-6. Installation Guide
+##6.  Installation instructions
 
-\*\*\*\*I&#39;ll just copy this in markdown from the user manual when we get to that point\*\*\*\*
+To install string theory you must have an Android device, preferably a phone because a tablet is too big to be used to practice the guitar effectively. Using your Android phone click on the following Google Drive link and download the stringtheory.apk file.
+
+https://drive.google.com/file/d/17LyqEfyJScBMLR3VyFwtCI2coqDryrUK/view?usp=sharing
+
+This file is an Android Package File, and when you download it onto an android device it allows you to install and use the app included in the file.
+
+Select stringtheory.apk and download the file. Once the file is downloaded, click to open on your phone. From here a pop up will ask you if you want to install the application **.** Select &quot;INSTALL&quot; and the app will be installed on your phone.
+
+<img src="images/install.png" alt="install" width="350"/>
+
+Once installed select &quot;open&quot; to open the app. The app can be reopened by selecting the StringTheory icon from your app tray.
+
+<img src="images/icon.png" alt="icon" width="350"/>
