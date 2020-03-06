@@ -30,7 +30,7 @@
 
 <h2>1. Introduction</h2>
 
-1.1 Overview
+<h3>1.1 Overview</h3>
 
 Our project is called &quot;StringTheory&quot;. StringTheory is an Android application to help users learn and practice guitar chords without a guitar. This is especially useful for those who travel a lot, use public transport, or for beginners who can&#39;t practise on a real guitar for long periods of time without their fingers hurting.
 
@@ -38,7 +38,7 @@ The idea is that the phone&#39;s screen would be transformed to look like a guit
 
 If a user &quot;strums&quot; the phone without holding down on any chord, then the sound of a guitar playing all it&#39;s strings &quot;open&quot; will be played. If you strum and the chord you have pressed down is incorrect then a gentle vibration will happen. This is to give users some tactile feedback while they are practising playing chords.
 
-1.2 Glossary
+<h3>1.2 Glossary</h3>
 
 Fretboard - also called the neck or fingerboard of a guitar. A long thin wooden part of a guitar divided up by frets where the player pushes the strings to make notes.
 
@@ -58,15 +58,15 @@ Open String - When you play a string on the guitar without fretting a note, then
 
 ![System Architecture Diagram](images/sys_arch.png)
 
-2.1 Android Framework
+<h3>2.1 Android Framework</h3>
 
 StringTheory is built using the android platform architecture known as Android Studio. This means it&#39;s designed to run on the Android operating system. The display sections of the program are built using XML and the logic of the program is implemented using Java.
 
-2.2 Application User Interface
+<h3>2.2 Application User Interface</h3>
 
 The application and the user will communicate through the device&#39;s touchscreen display, speakers, and vibration motor. In this layer of the system&#39;s architecture, the user will touch the screen to select the correct buttons to form a chord and strum the &quot;guitar&quot;. This touch information will be sent to the next layer to determine if the chord was correctly pressed. These chords will be sent back to the application user interface layer when they are played through the phone&#39;s speakers, or in the case of an invalid chord shape, through the phone&#39;s vibration motor.
 
-2.3 Java Program
+<h3>2.3 Java Program</h3>
 
 The core functionality of the app is carried out by a java program. This java framework layer inputs information from the touch display and returns feedback to the user in the form of changing the display, playing sounds, and making the phone vibrate.
 
@@ -74,19 +74,19 @@ The program interprets the touch coordinates on the screen&#39;s buttons as if t
 
 The touch information on the strumming area must also be registered. The sound of the correct chord is not played until the area is strummed. Android&#39;s multi-touch feature allows the user to select chords and strum at the same time.
 
-2.4 Internal Storage
+<h3>2.4 Internal Storage</h3>
 
 The sound files for each chord are stored on the device&#39;s internal storage. As they are only small media files, this does not require much storage. The program requests the necessary chords to be played using the hashmap. A java class then plays the selected file through the phone&#39;s speakers.
 
 <h2>3. High-Level Design</h2>
 
-3.1 Context Diagram
+<h3>3.1 Context Diagram<h3>
 
 ![Context Diagram](images/Context_Diagram.png)
 
 The context diagram shows how the application will communicate with external entities. In our case, the user communicates with the app through a touchscreen. The program also communicates with the device&#39;s speakers by creating audio to play. The sound files that the program needs are stored in the phones internal storage. These are requested by the program when needed. Finally, the program communicates with the user via the speakers by playing audio. Similarly, the program communicates with the user through the device&#39;s vibration motor, by giving the user feedback.
 
-3.2 Data Flow Diagram
+<h3>3.2 Data Flow Diagram</h3>
 
 ![Data Flow Diagram](images/dfd.png)
 
@@ -98,7 +98,7 @@ When the user &quot;strums&quot; the touchscreen a snapshot of the pressed butto
 
 If the shape the user has pressed down doesn&#39;t match a chord in the library then the phone&#39;s vibration motor is called. If the shape pressed down does match then the sound file for that chord is sent to the MediaPlayer class. From here the data is sent to the speakers to play the audio.
 
-3.3 UML Class Diagram
+<h3>3.3 UML Class Diagram</h3>
 
 ![UML Class Diagram](images/uml_class.png)
 
@@ -116,7 +116,7 @@ Similarly, Shapes should really be divided into two classes, a class to monitor 
 
 <h2>4. Testing</h2>
 
-4.1 User Testing
+<h3>4.1 User Testing</h3>
 
 In order to get user feedback to improve the app, we carried out user testing. The methodology of our user testing was to guide the user through a short tutorial on a real guitar, showing them how to play a few chords. The user would then play the same chords using the app. The user would then return to the guitar and see if their abilities improved.
 
@@ -144,7 +144,7 @@ Users who had less experience with the guitar had a difficult time remembering t
 
 To do this, we implemented a chord list info screen. It needed to be convenient for the user to access so they could check the buttons needed for the chord. For this reason, we added a simple help button on the main fretboard screen itself. This page used a scroll view so the user can scroll through the list of all available chords our application has to offer. This Info screen contains the names of the chords along with a corresponding image to allow ease of use.
 
-4.2 Unit and Manual Testing
+<h3>4.2 Unit and Manual Testing</h3>
 
 We carried out unit testing and manual testing in order to ensure that the smaller components of our program were working as expected.
 
@@ -152,7 +152,7 @@ We used JUnit to carry out unit tests, although we found it difficult to get goo
 
 In order to make sure various methods were giving the expected results we created a branch called testing\_refactoring and added statements to log the values of certain variables.
 
-4.3 Constraint Testing
+<h3>4.3 Constraint Testing</h3>
 
 We listed some constraints in our functional specification. We tested our application against these constraints to make sure they followed these rules.
 
@@ -164,7 +164,7 @@ To keep the sound feedback quick and responsive, we kept the media files short a
 
 The constraint that it must not need an internet connection was followed.
 
-4.4 UI testing - Accessibility
+<h3>4.4 UI testing - Accessibility</h3>
 
 We tested our app&#39;s UI accessibility to the standards recommended by the Android official documentation.
 
@@ -184,7 +184,7 @@ Each UI element should have a description for users who use a screen reader. We 
 
 <h2>5. Problems and Resolution</h2>
 
-5.1 Creating chords in real time
+<h3>5.1 Creating chords in real time</h3>
 
 The initial plan for our project was to have an app that can create and play a chord in real-time, based on the notes the user is pressing down. This program would work using MIDI files.
 
@@ -192,7 +192,7 @@ In the early stages of the project, we were able to create a java program that c
 
 Eventually, we decided to pivot to working on our plan B: to make the app&#39;s core functionality based around learning and practising more well-known chords. This approach was much more successful and in ways, it&#39;s even better for learning guitar, since it allows the users to focus more on learning and perfecting their guitar skills rather than just pressing buttons and making sounds.
 
-5.2 Object Orientated programming
+<h3>5.2 Object Orientated programming</h3>
 
 Due to the change in plan that happened midway through our project, our code ended up being quite messy. In particular, we found that much of our functionality was being handled by only two java classes: MainActivity and Shapes. These classes didn&#39;t follow the single responsibility principle, so our code ended up not being as robust and easy to read as we hoped.
 
@@ -202,7 +202,7 @@ This ended up being too little too late since we didn&#39;t have time to fully d
 
 Considering design more before and during development rather than just as an afterthought to refactor is a big takeaway we have from this project.
 
-5.3 Testing Android apps
+<h3>5.3 Testing Android apps</h3>
 
 We tested our app in several different ways. We did user testing to see how we could improve the user experience. We tested it to the constraints we set in the functional spec, to make sure the app did what it set out to do. We tested the app to the UI accessibility constraints to ensure it could be used by a wide range of people. We did unit tests and manual tests to test the code of our app.
 
@@ -210,7 +210,7 @@ We initially approached testing our code with unit tests. We were able to write 
 
 In the testing\_refactoring branch we added manual tests where we couldn&#39;t get unit tests to work. These tests were implemented using the Log.d() function and proved to be far more effective at testing if methods were returning the correct values.
 
-5.4 Responsive User-Interface
+<h3>5.4 Responsive User-Interface</h3>
 
 A problem which we encountered early on was a UI problem. We initially planned on creating the fretboard interface the dimensions of a real guitar fretboard, however, this turned out to look quite unappealing on wider phone screens as it created a lot of blank background space.
 
