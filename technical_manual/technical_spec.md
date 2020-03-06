@@ -56,7 +56,7 @@ Open String - When you play a string on the guitar without fretting a note, then
 
 2. System Architecture
 
-\*\*\*\*\*add the image in with markdown \*\*\*\*\*\*\*\*\*\*\*\*
+![System Architecture Diagram](images/sys_arch.png)
 
 2.1 Android Framework
 
@@ -82,13 +82,13 @@ The sound files for each chord are stored on the device&#39;s internal storage. 
 
 3.1 Context Diagram
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*add image in markdown\*\*\*\*\*\*\*\*\*\*\*
+![Context Diagram](images/Context_Diagram.png)
 
 The context diagram shows how the application will communicate with external entities. In our case, the user communicates with the app through a touchscreen. The program also communicates with the device&#39;s speakers by creating audio to play. The sound files that the program needs are stored in the phones internal storage. These are requested by the program when needed. Finally, the program communicates with the user via the speakers by playing audio. Similarly, the program communicates with the user through the device&#39;s vibration motor, by giving the user feedback.
 
 3.2 Data Flow Diagram
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*add image in  markdown\*\*\*\*\*\*\*\*\*\*
+![Data Flow Diagram](images/dfd.png)
 
 The data flow diagram for StringTheory shows how the user&#39;s touch input is turned into audio played by the speaker.
 
@@ -100,7 +100,7 @@ If the shape the user has pressed down doesn&#39;t match a chord in the library 
 
 3.3 UML Class Diagram
 
-\*\*\*\*\*\*\*\*\*\*\*add image in markdown\*\*\*\*\*\*\*\*\*
+![UML Class Diagram](images/uml_class.png)
 
 The Java program uses 4 main classes, MainActivity, Shapes, MediaPlayer (an Android framework), and a hashmap which maps shapes to chords.
 
@@ -134,7 +134,7 @@ Some users felt that the interface was difficult to read, particularly because t
 
 This was an interesting idea but proved to be quite disorienting when implemented.
 
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*ADD THE SCREENSHOT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+![Upside Down Buttons](images/upside_down_text.png)
 
 In the end, we settled on making the lettering bolder and easier to read. A small improvement but one that gave the app&#39;s overall appearance a more robust feel.
 
