@@ -2,31 +2,12 @@
 
 <h2>0. Table of contents</h2>
 
-| **        1** |
-| --- |
-| **        2** |
-|         2 |
-|         2 |
-| **        3** |
-|         3 |
-|         3 |
-|         3 |
-|         3 |
-| **        4** |
-|         4 |
-|         4 |
-|         5 |
-| **        6** |
-|         6 |
-|         7 |
-|         7 |
-| **        7** |
-|         7 |
-|         7 |
-|         7 |
-| **        7** |
-
-
+[Introduction](#Introduction) 
+[System Architecture](#System Architecture) 
+[Included chords](#chords) 
+[Introduction](#Introduction) 
+[Playing chords](#playing_chords) 
+[Included chords](#chords) 
 
 <h2>1. Introduction</h2>
 
