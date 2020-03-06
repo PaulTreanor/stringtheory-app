@@ -67,30 +67,30 @@ Here are the chords included with the app and the shape (buttons pressed down) r
 ## C
 <img src="images/c.png" alt="c" width="500"/>
 
-## ##  C7
+##  C7
 <img src="images/c7.png" alt="c7" width="500"/>
 
-## ##  D
+##  D
 <img src="images/d.png" alt="d" width="500"/>
 
-## ##  Dm
+##  Dm
 <img src="images/dm.png" alt="dm" width="500"/>
 
-## ##  E
+##  E
 <img src="images/e.png" alt="e" width="500"/>
 
-## ##  E7
+##  E7
 <img src="images/e7.png" alt="e7" width="500"/>
 
-## ##  Em
+##  Em
 <img src="images/em.png" alt="em" width="500"/>
 
-## ## ##  F
+##  F
 <img src="images/f.png" alt="f" width="500"/>
 
-## ## ##  G
+##  G
 <img src="images/g.png" alt="g" width="500"/>
 
-## ## ##  G7
+## G7
 <img src="images/g7.png" alt="g7" width="500"/>
 
