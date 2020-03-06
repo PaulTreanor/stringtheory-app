@@ -3,11 +3,11 @@
 <h2>0. Table of contents</h2>
 
 [Introduction](#Introduction) 
-[System Architecture](#System Architecture) 
-[Included chords](#chords) 
-[Introduction](#Introduction) 
-[Playing chords](#playing_chords) 
-[Included chords](#chords) 
+[System Architecture](#System_Architecture) 
+[High-Level Design	](#High-Level_Design) 
+[Testing](#Testing) 
+[Problems and Resolutions](#Problems_Resolutions) 
+[Installation Guide](#Installation_Guide) 
 
 <h2>1. Introduction</h2>
 
@@ -95,7 +95,7 @@ In hindsight, it would have been better practice to have split MainAcitivity int
 
 Similarly, Shapes should really be divided into two classes, a class to monitor the buttons the user is pressing down and another class Shapes, which has methods to compare shapes.
 
-<h2>4. Testing</h2>
+<h2 name="Testing">4. Testing</h2>
 
 <h4>4.1 User Testing</h4>
 
