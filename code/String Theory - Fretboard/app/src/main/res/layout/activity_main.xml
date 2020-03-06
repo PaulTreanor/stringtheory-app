@@ -18,7 +18,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="guitar body" />
+    />
 
     <com.paul.stringtheory_justplay.Views.FretboardBackground
         android:id="@+id/fretboardBackground"
@@ -31,7 +33,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="fretboard background" />
+    />
 
     <com.paul.stringtheory_justplay.Views.background
         android:id="@+id/background"
@@ -41,7 +45,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground"
+        android:contentDescription="background" />
+    />
 
     <com.paul.stringtheory_justplay.Views.strumArea
         android:id="@+id/strumArea"
@@ -62,14 +68,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.12647754" />
+        app:layout_constraintGuide_percent="0.12647754"
+        android:contentDescription="@null" />
+    />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.92" />
+        app:layout_constraintGuide_percent="0.92"
+        android:contentDescription="@null" />
 
     <View
         android:id="@+id/divider2"
@@ -79,7 +88,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fretboardBackground"
         app:layout_constraintEnd_toEndOf="@+id/fretboardBackground"
         app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground" />
+        app:layout_constraintTop_toBottomOf="@+id/fretboardBackground"
+        android:contentDescription="@null" />
 
     <View
         android:id="@+id/divider"
@@ -88,7 +98,8 @@
         android:background="#A0522D"
         app:layout_constraintBottom_toTopOf="@+id/fretboardBackground"
         app:layout_constraintStart_toStartOf="@+id/fretboardBackground"
-        app:layout_constraintTop_toTopOf="@+id/fretboardBackground" />
+        app:layout_constraintTop_toTopOf="@+id/fretboardBackground"
+        android:contentDescription="@null" />
 
 <!--
     Info and Swipe button
@@ -105,7 +116,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guitarBody"
-        app:srcCompat="@drawable/icon_swipe" />
+        app:srcCompat="@drawable/icon_swipe"
+        />
 
     <Button
         android:id="@+id/infoButton"

@@ -69,6 +69,9 @@ public class Shapes {
         for (int i = 1; i < 25; i++) {
             int id = this.activity.getResources().getIdentifier("btn"+ i, "id", this.activity.getPackageName());
             allButtons[i] = this.activity.findViewById(id);
+            //set description for each button (for accessibility)
+            allButtons[i].setContentDescription("button" + i);
+
         }
     }
 
