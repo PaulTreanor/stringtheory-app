@@ -25,7 +25,6 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 ##  Table of contents
 [Overview](#overview) <div align="right"> 2. </div>
-[Installation instructions](#installation) <div align="right"> 2. </div>
 [Playing chords](#playing_chords) <div align="right"> 3. </div>
 [Included chords](#chords) <div align="right"> 4. </div>
 
@@ -34,26 +33,6 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 ## Overview
 
 StringTheory is an Android app designed to help users learn and practice guitar chords. The app can be played anywhere, unlike a guitar, and can also be used with headphones. StringTheory also aims to be easier to use than a guitar, since playing it does not hurt your fingers.
-
-<a name="installation"></a>
-##  Installation instructions
-
-To install string theory you must have an Android device, preferably a phone because a tablet is too big to be used to practice the guitar effectively. Using your Android phone click on the following Google Drive link and download the stringtheory.apk file.
-
-https://drive.google.com/file/d/1gAI-JcsH-VC2bsfaDSevRCaYOPq2peo0/view?usp=sharing
-
-This file is an Android Package File, and when you download it onto an android device it allows you to install and use the app included in the file.
-
-Select stringtheory.apk and download the file. Once the file is downloaded, click to open on your phone. From here a pop up will ask you if you want to install the application **.** Select &quot;INSTALL&quot; and the app will be installed on your phone.
-
-<img src="images/install.png" alt="install" width="350"/>
-
-Once installed select &quot;open&quot; to open the app. The app can be reopened by selecting the StringTheory icon from your app tray.
-
-<img src="images/icon.png" alt="icon" width="350"/>
-
-
-
 
 <a name="playing_chords"></a>
 ##  Playing chords
