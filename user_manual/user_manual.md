@@ -24,9 +24,11 @@ Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 
 ##  Table of contents
-[Overview](#overview) <div align="right"> 2. </div>
-[Playing chords](#playing_chords) <div align="right"> 3. </div>
-[Included chords](#chords) <div align="right"> 4. </div>
+[Overview](#overview) 
+[Playing chords](#playing_chords) 
+[Chord info function](#help) 
+[Included chords](#chords) 
+
 
 
 <a name="overview"></a>
@@ -42,6 +44,11 @@ The app allows the user to learn, play, and practice 14 different chords. These 
 Playing a chord with StringTheory is designed to be similar to playing a chord with a real guitar. The user must press down on the notes of the chord and then strum the instrument. While a user selects notes by pressing down on strings across certain frets on a real guitar, a user selects notes by pressing buttons with StringTheory.
 
 Once a user has selected their chosen chord by pressing down on several notes, they can swipe across the strum area to play the chord. There is a swipe gesture icon over this area to show the user where to &quot;strum&quot;.
+
+<a name="help"></a>
+##  Chord info function 
+
+By clicking the question mark icon in the corner of the screen, near the "bridge" of the fretboard, the user can see all the chords that are included in the app. This icon will take you to a new screen where the names of each chord are layed out as well as an image of the chord being played. 
 
 <a name="chords"></a>
 ##  Included chords
