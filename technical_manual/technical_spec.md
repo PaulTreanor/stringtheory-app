@@ -3,12 +3,18 @@
 <h2>0. Table of contents</h2>
 
 [Introduction](#Introduction) 
+<br>
 [System Architecture](#System_Architecture) 
+<br>
 [High-Level Design	](#High-Level_Design) 
+<br>
 [Testing](#Testing) 
+<br>
 [Problems and Resolutions](#Problems_Resolutions) 
+<br>
 [Installation Guide](#Installation_Guide) 
 
+<a name="Introduction"></a>
 <h2>1. Introduction</h2>
 
 <h4>1.1 Overview</h4>
@@ -21,19 +27,21 @@ If a user &quot;strums&quot; the phone without holding down on any chord, then t
 
 <h4>1.2 Glossary</h4>
 
-<h5>Fretboard - </h5>also called the neck or fingerboard of a guitar. A long thin wooden part of a guitar divided up by frets where the player pushes the strings to make notes.
+<h5>Fretboard - </h5>Also called the neck or fingerboard of a guitar. A long thin wooden part of a guitar divided up by frets where the player pushes the strings to make notes.
 
 <h5>Midi files - </h5>Musical Instrument Digital Interface – A language that represents sound files. Designed to standardize communication between computers and electronic musical instruments.
 
 <h5>Multi-touch - </h5>A technology allowing a touchscreen to detect and track two or more points of contact (usually the user&#39;s fingers) at once.
 
-<h5>Chord- </h5>a group of (typically three or more) notes sounded together to make a new sound
+<h5>Chord- </h5>A group of (typically three or more) notes sounded together to make a new sound
 
-<h5>Chord Shape - </h5>the layout of notes being pressed when a user makes a specific chord. To play a C chord the guitarist plays a C chord shape.
+<h5>Chord Shape - </h5>The layout of notes being pressed when a user makes a specific chord. To play a C chord the guitarist plays a C chord shape.
 
-<h5>Fretting - </h5>when a guitar player pushes on a string over a particular fret to select a note, also called fingering.
+<h5>Fretting - </h5>When a guitar player pushes on a string over a particular fret to select a note, also called fingering.
 
 <h5>Open String - </h5>When you play a string on the guitar without fretting a note, then you are said to be playing an open string.
+
+<a name="System_Architecture"></a>
 
 <h2>2. System Architecture</h4>
 
@@ -58,6 +66,8 @@ The touch information on the strumming area must also be registered. The sound o
 <h4>2.4 Internal Storage</h4>
 
 The sound files for each chord are stored on the device&#39;s internal storage. As they are only small media files, this does not require much storage. The program requests the necessary chords to be played using the hashmap. A java class then plays the selected file through the phone&#39;s speakers.
+
+<a name="High-Level_Design"></a>
 
 <h2>3. High-Level Design</h2>
 
@@ -95,7 +105,7 @@ In hindsight, it would have been better practice to have split MainAcitivity int
 
 Similarly, Shapes should really be divided into two classes, a class to monitor the buttons the user is pressing down and another class Shapes, which has methods to compare shapes.
 
-<h2 name="Testing">4. Testing</h2>
+<a name="Testing"></a>
 
 <h4>4.1 User Testing</h4>
 
@@ -200,7 +210,9 @@ We then decided to design the User-Interface to be responsive and change size ac
 
 After many attempts and using many different layouts Android Studio has to offer, we settled with using ConstraintLayout. Using this was brand new and it seems very complicated at first. Using the  &#39;Chain&#39; feature that ConstraintLayout offers achieved the responsive UI we were looking for.
 
-<h2>6.  Installation instructions</h2>
+<a name="Installation_guide"></a>
+
+<h2>6.  Installation Guide</h2>
 
 To install string theory you must have an Android device, preferably a phone because a tablet is too big to be used to practice the guitar effectively. Using your Android phone click on the following Google Drive link and download the stringtheory.apk file.
 
