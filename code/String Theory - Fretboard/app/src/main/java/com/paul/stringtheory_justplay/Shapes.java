@@ -97,8 +97,7 @@ public class Shapes {
 
                             pressedNotes.remove(button);
                             break;
-                        default:
-                            throw new IllegalStateException("Unexpected value: " + event.getAction());
+                        
                     }
                     return true;
                 }
