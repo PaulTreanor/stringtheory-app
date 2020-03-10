@@ -220,6 +220,8 @@ https://drive.google.com/file/d/17LyqEfyJScBMLR3VyFwtCI2coqDryrUK/view?usp=shari
 
 This file is an Android Package File, and when you download it onto an android device it allows you to install and use the app included in the file.
 
+Another copy of this file can be found in the APK file in the root of this projects repository. 
+
 Select stringtheory.apk and download the file. Once the file is downloaded, click to open on your phone. From here a pop up will ask you if you want to install the application **.** Select &quot;INSTALL&quot; and the app will be installed on your phone.
 
 <img src="images/install.png" alt="install" width="350"/>
