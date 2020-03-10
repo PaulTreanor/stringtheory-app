@@ -19,7 +19,7 @@
 
 Paul Treanor - [paul.treanor5@mail.dcu.ie](mailto:paul.treanor5@mail.dcu.ie)
 
-Golin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
+Colin Gorman - [colin.gorman23@mail.dcu.ie](mailto:colin.gorman23@mail.dcu.ie)
 
 
 
